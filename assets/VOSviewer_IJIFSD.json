@@ -1,0 +1,7082 @@
+﻿{
+	"network": {
+		"items": [
+			{
+				"id": 1,
+				"label": "accuracy",
+				"x": -1.2001,
+				"y": -0.3945,
+				"cluster": 10,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 2,
+				"label": "agent-based simulation",
+				"x": -0.2395,
+				"y": 0.2572,
+				"cluster": 5,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 3,
+				"label": "agricultural takāful",
+				"x": -0.1813,
+				"y": 0.4994,
+				"cluster": 3,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 5,
+				"label": "albania",
+				"x": -0.1526,
+				"y": 0.0644,
+				"cluster": 5,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 6,
+				"label": "algorithmic governance",
+				"x": 0.0945,
+				"y": -0.1658,
+				"cluster": 20,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 7,
+				"label": "analytic network process (anp)",
+				"x": -0.2730,
+				"y": 0.2069,
+				"cluster": 5,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 4.8889
+				}
+			},
+			{
+				"id": 8,
+				"label": "analytical network process (anp)",
+				"x": -0.9387,
+				"y": 0.2145,
+				"cluster": 8,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 9,
+				"label": "and governance (esg)",
+				"x": 0.0191,
+				"y": -0.0207,
+				"cluster": 12,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 10,
+				"label": "artificial intelligence (ai)",
+				"x": -0.7069,
+				"y": -0.2735,
+				"cluster": 16,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 14,
+				"label": "b40",
+				"x": 1.3633,
+				"y": -0.2133,
+				"cluster": 9,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 15,
+				"label": "bangladesh",
+				"x": -0.2837,
+				"y": 0.5550,
+				"cluster": 3,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 16,
+				"label": "bank profitability",
+				"x": -0.4815,
+				"y": -0.3495,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 17,
+				"label": "bank risk",
+				"x": 1.0630,
+				"y": -0.3639,
+				"cluster": 2,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 2.0000
+				}
+			},
+			{
+				"id": 18,
+				"label": "bank strategy",
+				"x": -0.4760,
+				"y": -0.3448,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 19,
+				"label": "banking attractiveness",
+				"x": 0.2948,
+				"y": 0.3831,
+				"cluster": 22,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 20,
+				"label": "benefits",
+				"x": 1.3652,
+				"y": -0.2059,
+				"cluster": 9,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 21,
+				"label": "bidirectional relationship",
+				"x": 0.0286,
+				"y": -0.0069,
+				"cluster": 12,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 22,
+				"label": "blended finance",
+				"x": 0.0103,
+				"y": 0.4669,
+				"cluster": 14,
+				"weights": {
+					"Links": 12.0000,
+					"Total link strength": 12.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 24,
+				"label": "bounded adjusted measure",
+				"x": -0.1751,
+				"y": -0.3363,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 25,
+				"label": "car ijārah",
+				"x": -1.2015,
+				"y": -0.4048,
+				"cluster": 10,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 26,
+				"label": "cash waqf",
+				"x": -1.3503,
+				"y": -0.3979,
+				"cluster": 15,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 27,
+				"label": "central aceh",
+				"x": 0.3160,
+				"y": -0.2910,
+				"cluster": 11,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 28,
+				"label": "central java",
+				"x": -0.9395,
+				"y": 0.2236,
+				"cluster": 8,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 29,
+				"label": "clarity",
+				"x": -1.2166,
+				"y": -0.3970,
+				"cluster": 10,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 30,
+				"label": "climate adaptability",
+				"x": 0.1020,
+				"y": 0.4688,
+				"cluster": 14,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 31,
+				"label": "climate change performance index (ccpi)",
+				"x": -0.1003,
+				"y": 0.1256,
+				"cluster": 12,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 32,
+				"label": "climate resilience",
+				"x": 0.3229,
+				"y": -0.2933,
+				"cluster": 11,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 33,
+				"label": "climate risk perception",
+				"x": -0.1056,
+				"y": 0.1335,
+				"cluster": 12,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 34,
+				"label": "coastal and urban areas",
+				"x": -1.0330,
+				"y": 0.2656,
+				"cluster": 8,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 3.6667
+				}
+			},
+			{
+				"id": 35,
+				"label": "coffee farmers",
+				"x": 0.3203,
+				"y": -0.3002,
+				"cluster": 11,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 36,
+				"label": "collateral",
+				"x": 0.9027,
+				"y": 0.2081,
+				"cluster": 6,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 37,
+				"label": "collateralised commodity murābaḥah (ccm)",
+				"x": 0.9141,
+				"y": 0.2044,
+				"cluster": 6,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 38,
+				"label": "consumer perception",
+				"x": 0.2899,
+				"y": 0.3778,
+				"cluster": 22,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 39,
+				"label": "conventional banks (cbs)",
+				"x": 1.0879,
+				"y": -0.3164,
+				"cluster": 2,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 41,
+				"label": "corporate governance",
+				"x": 1.0259,
+				"y": -0.3185,
+				"cluster": 2,
+				"weights": {
+					"Links": 15.0000,
+					"Total link strength": 16.0000,
+					"Occurrences": 3.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.3333,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 42,
+				"label": "corporate governance index (cgi)",
+				"x": 1.0831,
+				"y": -0.3083,
+				"cluster": 2,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 43,
+				"label": "counter-hegemonic economics",
+				"x": 0.3689,
+				"y": -0.3945,
+				"cluster": 11,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 44,
+				"label": "coverage",
+				"x": 1.3583,
+				"y": -0.2079,
+				"cluster": 9,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 45,
+				"label": "covid-19 pandemic",
+				"x": 1.0758,
+				"y": -0.3665,
+				"cluster": 2,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 2.0000
+				}
+			},
+			{
+				"id": 46,
+				"label": "co₂ emissions",
+				"x": 0.6860,
+				"y": -0.3049,
+				"cluster": 18,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 47,
+				"label": "credit risk",
+				"x": -0.4059,
+				"y": -0.3889,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 48,
+				"label": "cryptocurrency",
+				"x": 0.5006,
+				"y": 0.3928,
+				"cluster": 1,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 49,
+				"label": "customer behaviour",
+				"x": -0.1343,
+				"y": -0.0517,
+				"cluster": 13,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 2.4444
+				}
+			},
+			{
+				"id": 50,
+				"label": "customer perception",
+				"x": -1.2079,
+				"y": -0.3984,
+				"cluster": 10,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 51,
+				"label": "customer satisfaction",
+				"x": -1.2117,
+				"y": -0.4063,
+				"cluster": 10,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 52,
+				"label": "data ethics",
+				"x": 0.0800,
+				"y": -0.1632,
+				"cluster": 20,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 55,
+				"label": "determinants",
+				"x": 1.2489,
+				"y": -0.1890,
+				"cluster": 9,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 56,
+				"label": "digital assets",
+				"x": 0.5046,
+				"y": 0.4006,
+				"cluster": 1,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 57,
+				"label": "digital economy",
+				"x": 0.0937,
+				"y": -0.1566,
+				"cluster": 20,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 58,
+				"label": "distributive justice (ʿadl)",
+				"x": 0.3661,
+				"y": -0.4018,
+				"cluster": 11,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 59,
+				"label": "donation-based crowdfunding",
+				"x": -0.2444,
+				"y": 0.2686,
+				"cluster": 5,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 60,
+				"label": "dynamic prescriptive economics (dpe)",
+				"x": 0.0838,
+				"y": 0.4759,
+				"cluster": 14,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 61,
+				"label": "ecological modernisation theory",
+				"x": 0.6771,
+				"y": -0.3037,
+				"cluster": 18,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 62,
+				"label": "economic empowerment",
+				"x": -0.1941,
+				"y": 0.3497,
+				"cluster": 5,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 63,
+				"label": "economic welfare",
+				"x": 0.3134,
+				"y": -0.2979,
+				"cluster": 11,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 64,
+				"label": "education",
+				"x": -1.1824,
+				"y": -0.3281,
+				"cluster": 10,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 0.5000
+				}
+			},
+			{
+				"id": 65,
+				"label": "environmental",
+				"x": 0.0131,
+				"y": -0.0125,
+				"cluster": 12,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 66,
+				"label": "environmental commitment",
+				"x": 1.1023,
+				"y": -0.2317,
+				"cluster": 2,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 2.4444
+				}
+			},
+			{
+				"id": 67,
+				"label": "environmental index",
+				"x": 0.2597,
+				"y": -0.4444,
+				"cluster": 21,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 4.8889
+				}
+			},
+			{
+				"id": 68,
+				"label": "environmental, social and governance (esg)",
+				"x": -0.0959,
+				"y": 0.1342,
+				"cluster": 12,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 69,
+				"label": "esg",
+				"x": 0.2678,
+				"y": -0.4346,
+				"cluster": 21,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 4.8889
+				}
+			},
+			{
+				"id": 70,
+				"label": "esg (environmental social, and governance)",
+				"x": -0.0757,
+				"y": -0.0981,
+				"cluster": 13,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 71,
+				"label": "ethical investing",
+				"x": 0.5860,
+				"y": 0.3143,
+				"cluster": 1,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 72,
+				"label": "ethnography",
+				"x": 0.7652,
+				"y": 0.3300,
+				"cluster": 1,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 3.6667
+				}
+			},
+			{
+				"id": 74,
+				"label": "financial capability",
+				"x": -1.1801,
+				"y": -0.3223,
+				"cluster": 10,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 0.5000
+				}
+			},
+			{
+				"id": 76,
+				"label": "financial efficiency",
+				"x": -0.1713,
+				"y": -0.3436,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 77,
+				"label": "financial inclusion",
+				"x": -0.1973,
+				"y": 0.2951,
+				"cluster": 5,
+				"weights": {
+					"Links": 22.0000,
+					"Total link strength": 23.0000,
+					"Occurrences": 5.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.4000,
+					"Avg. citations": 1.4000,
+					"Avg. norm. citations": 0.7000
+				}
+			},
+			{
+				"id": 78,
+				"label": "financial innovation",
+				"x": -1.3864,
+				"y": -0.4049,
+				"cluster": 15,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 79,
+				"label": "financial management",
+				"x": -0.9850,
+				"y": 0.2421,
+				"cluster": 8,
+				"weights": {
+					"Links": 11.0000,
+					"Total link strength": 11.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.5000,
+					"Avg. norm. citations": 1.8333
+				}
+			},
+			{
+				"id": 80,
+				"label": "financial performance",
+				"x": 1.0971,
+				"y": -0.3139,
+				"cluster": 2,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 81,
+				"label": "financial regulation",
+				"x": 0.5782,
+				"y": 0.3095,
+				"cluster": 1,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 82,
+				"label": "financial stability",
+				"x": 1.0972,
+				"y": -0.2726,
+				"cluster": 2,
+				"weights": {
+					"Links": 9.0000,
+					"Total link strength": 9.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 83,
+				"label": "financial well-being",
+				"x": -1.0302,
+				"y": 0.2559,
+				"cluster": 8,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 3.6667
+				}
+			},
+			{
+				"id": 84,
+				"label": "financial well-being (fwb)",
+				"x": -1.1863,
+				"y": -0.3231,
+				"cluster": 10,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 0.5000
+				}
+			},
+			{
+				"id": 85,
+				"label": "financing growth",
+				"x": 1.2486,
+				"y": -0.1947,
+				"cluster": 9,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 86,
+				"label": "fiqh",
+				"x": 0.5722,
+				"y": 0.3861,
+				"cluster": 1,
+				"weights": {
+					"Links": 9.0000,
+					"Total link strength": 9.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 87,
+				"label": "firm value",
+				"x": 0.0287,
+				"y": -0.0171,
+				"cluster": 12,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 88,
+				"label": "fixed assets",
+				"x": 0.6368,
+				"y": 0.3722,
+				"cluster": 1,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 89,
+				"label": "food security",
+				"x": -0.2101,
+				"y": 0.4849,
+				"cluster": 3,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.5000,
+					"Avg. norm. citations": 1.8333
+				}
+			},
+			{
+				"id": 90,
+				"label": "fuzzy logic",
+				"x": -0.2476,
+				"y": 0.2610,
+				"cluster": 5,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 91,
+				"label": "generalised method of moments (gmm)",
+				"x": 1.0923,
+				"y": -0.3056,
+				"cluster": 2,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 92,
+				"label": "generations y-z",
+				"x": -1.3080,
+				"y": -0.3789,
+				"cluster": 15,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 93,
+				"label": "governance",
+				"x": -0.9333,
+				"y": 0.2302,
+				"cluster": 8,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 94,
+				"label": "governance index",
+				"x": 0.2555,
+				"y": -0.4377,
+				"cluster": 21,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 4.8889
+				}
+			},
+			{
+				"id": 95,
+				"label": "green bond",
+				"x": -0.2910,
+				"y": 0.5480,
+				"cluster": 3,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 96,
+				"label": "green ṣukūk",
+				"x": -0.2839,
+				"y": 0.5481,
+				"cluster": 3,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 97,
+				"label": "gulf cooperation council (gcc) countries",
+				"x": 1.0704,
+				"y": -0.3599,
+				"cluster": 2,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 2.0000
+				}
+			},
+			{
+				"id": 100,
+				"label": "home equity",
+				"x": 0.0949,
+				"y": 0.4777,
+				"cluster": 14,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 101,
+				"label": "housing affordability crisis",
+				"x": 0.0989,
+				"y": 0.4887,
+				"cluster": 14,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 102,
+				"label": "human needs",
+				"x": -0.6601,
+				"y": 0.3783,
+				"cluster": 4,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 103,
+				"label": "human wellbeing",
+				"x": -0.6539,
+				"y": 0.3894,
+				"cluster": 4,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 105,
+				"label": "ijtihād",
+				"x": 0.0862,
+				"y": -0.1700,
+				"cluster": 20,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 106,
+				"label": "institutional development",
+				"x": 1.1080,
+				"y": -0.2328,
+				"cluster": 2,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 2.4444
+				}
+			},
+			{
+				"id": 107,
+				"label": "interest-free loan",
+				"x": -0.2365,
+				"y": 0.2648,
+				"cluster": 5,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 110,
+				"label": "islamic banking",
+				"x": -0.4174,
+				"y": -0.3223,
+				"cluster": 7,
+				"weights": {
+					"Links": 26.0000,
+					"Total link strength": 26.0000,
+					"Occurrences": 6.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.5000,
+					"Avg. norm. citations": 0.7037
+				}
+			},
+			{
+				"id": 112,
+				"label": "islamic banking industry",
+				"x": 0.2674,
+				"y": -0.4424,
+				"cluster": 21,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 4.8889
+				}
+			},
+			{
+				"id": 113,
+				"label": "islamic banks",
+				"x": 1.0898,
+				"y": -0.1704,
+				"cluster": 2,
+				"weights": {
+					"Links": 15.0000,
+					"Total link strength": 15.0000,
+					"Occurrences": 4.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.2500,
+					"Avg. norm. citations": 1.2361
+				}
+			},
+			{
+				"id": 114,
+				"label": "islamic banks (ibs)",
+				"x": 1.0797,
+				"y": -0.3385,
+				"cluster": 2,
+				"weights": {
+					"Links": 10.0000,
+					"Total link strength": 11.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.5000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 115,
+				"label": "islamic corporate governance (icg)",
+				"x": -0.6667,
+				"y": 0.1110,
+				"cluster": 17,
+				"weights": {
+					"Links": 2.0000,
+					"Total link strength": 2.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 116,
+				"label": "islamic derivatives",
+				"x": 1.0673,
+				"y": 0.1353,
+				"cluster": 6,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 117,
+				"label": "islamic economics",
+				"x": -0.6224,
+				"y": 0.3512,
+				"cluster": 4,
+				"weights": {
+					"Links": 9.0000,
+					"Total link strength": 9.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.5000,
+					"Avg. citations": 5.0000,
+					"Avg. norm. citations": 2.5000
+				}
+			},
+			{
+				"id": 118,
+				"label": "islamic egalitarianism",
+				"x": -1.3061,
+				"y": -0.3868,
+				"cluster": 15,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 119,
+				"label": "islamic endowment",
+				"x": -0.0958,
+				"y": 0.4565,
+				"cluster": 3,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 120,
+				"label": "islamic finance",
+				"x": 0.2413,
+				"y": 0.3203,
+				"cluster": 1,
+				"weights": {
+					"Links": 33.0000,
+					"Total link strength": 33.0000,
+					"Occurrences": 6.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.5000,
+					"Avg. citations": 0.1667,
+					"Avg. norm. citations": 0.7037
+				}
+			},
+			{
+				"id": 121,
+				"label": "islamic fiscal policy",
+				"x": 0.3787,
+				"y": -0.4025,
+				"cluster": 11,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 122,
+				"label": "islamic green banking disclosure",
+				"x": 0.8824,
+				"y": -0.2688,
+				"cluster": 2,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 123,
+				"label": "islamic green banking disclosure index (igbdi)",
+				"x": 0.8830,
+				"y": -0.2602,
+				"cluster": 2,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 125,
+				"label": "islamic jurisprudence",
+				"x": 0.0845,
+				"y": -0.1551,
+				"cluster": 20,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 126,
+				"label": "islamic microfinance",
+				"x": -0.3175,
+				"y": 0.2695,
+				"cluster": 4,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 1.5000
+				}
+			},
+			{
+				"id": 127,
+				"label": "islamic microfinance institution",
+				"x": -0.4846,
+				"y": 0.3176,
+				"cluster": 4,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 128,
+				"label": "islamic mobile banking",
+				"x": -0.1426,
+				"y": -0.0582,
+				"cluster": 13,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 2.4444
+				}
+			},
+			{
+				"id": 129,
+				"label": "islamic networking",
+				"x": -0.4800,
+				"y": 0.3220,
+				"cluster": 4,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 130,
+				"label": "islamic philanthropy",
+				"x": -1.3845,
+				"y": -0.4151,
+				"cluster": 15,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 131,
+				"label": "islamic profit rate swap (iprs)",
+				"x": 1.0739,
+				"y": 0.1246,
+				"cluster": 6,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 132,
+				"label": "islamic repurchase agreement",
+				"x": 0.9065,
+				"y": 0.2003,
+				"cluster": 6,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 133,
+				"label": "islamic social finance",
+				"x": -1.3808,
+				"y": -0.4092,
+				"cluster": 15,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 134,
+				"label": "islamic social finance (isf)",
+				"x": -0.1427,
+				"y": 0.4779,
+				"cluster": 3,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.5000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 0.5000
+				}
+			},
+			{
+				"id": 135,
+				"label": "islamic values",
+				"x": -0.4859,
+				"y": 0.3237,
+				"cluster": 4,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 136,
+				"label": "islamic worldview",
+				"x": 0.7606,
+				"y": 0.3343,
+				"cluster": 1,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 3.6667
+				}
+			},
+			{
+				"id": 140,
+				"label": "legal reform",
+				"x": -0.1434,
+				"y": 0.0654,
+				"cluster": 5,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 141,
+				"label": "malaysia",
+				"x": 1.3096,
+				"y": -0.2011,
+				"cluster": 9,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 142,
+				"label": "maqāṣid al-sharīʿah",
+				"x": 0.2598,
+				"y": -0.2502,
+				"cluster": 11,
+				"weights": {
+					"Links": 44.0000,
+					"Total link strength": 46.0000,
+					"Occurrences": 9.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.6667,
+					"Avg. citations": 0.8889,
+					"Avg. norm. citations": 1.7531
+				}
+			},
+			{
+				"id": 143,
+				"label": "micro-takāful",
+				"x": 1.4018,
+				"y": -0.2153,
+				"cluster": 9,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.5000,
+					"Avg. citations": 0.5000,
+					"Avg. norm. citations": 0.2500
+				}
+			},
+			{
+				"id": 144,
+				"label": "microfinance",
+				"x": -0.2540,
+				"y": 0.2407,
+				"cluster": 5,
+				"weights": {
+					"Links": 9.0000,
+					"Total link strength": 9.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.5000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 2.9444
+				}
+			},
+			{
+				"id": 145,
+				"label": "microtakāful",
+				"x": -0.0971,
+				"y": 0.4496,
+				"cluster": 3,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 146,
+				"label": "mobile banking",
+				"x": -0.1415,
+				"y": -0.0510,
+				"cluster": 13,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 2.4444
+				}
+			},
+			{
+				"id": 147,
+				"label": "moral obligation",
+				"x": -0.8950,
+				"y": -0.2284,
+				"cluster": 16,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 149,
+				"label": "multidimensional analysis",
+				"x": -0.4126,
+				"y": -0.3811,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 150,
+				"label": "multidimensional poverty",
+				"x": -0.7370,
+				"y": 0.1128,
+				"cluster": 17,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 152,
+				"label": "murābaḥah",
+				"x": 1.0155,
+				"y": 0.1052,
+				"cluster": 6,
+				"weights": {
+					"Links": 14.0000,
+					"Total link strength": 14.0000,
+					"Occurrences": 3.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 0.8333
+				}
+			},
+			{
+				"id": 153,
+				"label": "muslim families",
+				"x": -1.0364,
+				"y": 0.2592,
+				"cluster": 8,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 3.6667
+				}
+			},
+			{
+				"id": 156,
+				"label": "netnographic study",
+				"x": -0.2546,
+				"y": 0.4687,
+				"cluster": 3,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 3.6667
+				}
+			},
+			{
+				"id": 158,
+				"label": "non-linear relationship",
+				"x": -0.0710,
+				"y": -0.0924,
+				"cluster": 13,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 160,
+				"label": "non-performing loans",
+				"x": -0.4132,
+				"y": -0.3884,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 161,
+				"label": "oic industrial economies",
+				"x": 0.6755,
+				"y": -0.2950,
+				"cluster": 18,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 162,
+				"label": "ordered probit regression",
+				"x": -0.1870,
+				"y": 0.3509,
+				"cluster": 5,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 163,
+				"label": "ottoman empire",
+				"x": 0.6380,
+				"y": 0.3800,
+				"cluster": 1,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 164,
+				"label": "paddy farmers",
+				"x": -0.1782,
+				"y": 0.4925,
+				"cluster": 3,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 165,
+				"label": "pakistan",
+				"x": -0.9039,
+				"y": -0.2238,
+				"cluster": 16,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 167,
+				"label": "panel ardl",
+				"x": 0.6832,
+				"y": -0.2904,
+				"cluster": 18,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 168,
+				"label": "panel data analysis",
+				"x": -0.4054,
+				"y": -0.3816,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 169,
+				"label": "partial least squares structural equation modeling (pls-sem)",
+				"x": -0.8928,
+				"y": -0.2122,
+				"cluster": 16,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 170,
+				"label": "partial least squares-structural equation modelling (pls-sem)",
+				"x": -1.2095,
+				"y": -0.3896,
+				"cluster": 10,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 171,
+				"label": "participatory banks",
+				"x": 0.2845,
+				"y": 0.3829,
+				"cluster": 22,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 172,
+				"label": "perceived herd behaviour",
+				"x": -0.4818,
+				"y": -0.4600,
+				"cluster": 19,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 173,
+				"label": "perceived iḥsān",
+				"x": -1.3133,
+				"y": -0.3844,
+				"cluster": 15,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 174,
+				"label": "perceived price",
+				"x": -0.4694,
+				"y": -0.4720,
+				"cluster": 19,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 175,
+				"label": "perceived security",
+				"x": -0.4789,
+				"y": -0.4766,
+				"cluster": 19,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 177,
+				"label": "policy and regulatory environment",
+				"x": -0.5743,
+				"y": 0.3087,
+				"cluster": 4,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 10.0000,
+					"Avg. norm. citations": 5.0000
+				}
+			},
+			{
+				"id": 178,
+				"label": "poverty alleviation",
+				"x": -0.7338,
+				"y": 0.1062,
+				"cluster": 17,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 179,
+				"label": "profit",
+				"x": 1.0709,
+				"y": -0.0298,
+				"cluster": 6,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 1.5000
+				}
+			},
+			{
+				"id": 180,
+				"label": "public policy",
+				"x": -0.9300,
+				"y": 0.2118,
+				"cluster": 8,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 181,
+				"label": "purification",
+				"x": 0.5840,
+				"y": 0.3231,
+				"cluster": 1,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 183,
+				"label": "rahn (pledge)",
+				"x": 0.9104,
+				"y": 0.2121,
+				"cluster": 6,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 184,
+				"label": "real estate",
+				"x": 0.6439,
+				"y": 0.3749,
+				"cluster": 1,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 185,
+				"label": "reduction of inequality",
+				"x": 0.7664,
+				"y": 0.3363,
+				"cluster": 1,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 3.6667
+				}
+			},
+			{
+				"id": 186,
+				"label": "regenerative development",
+				"x": 0.0877,
+				"y": 0.4868,
+				"cluster": 14,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 187,
+				"label": "religiosity",
+				"x": -1.1508,
+				"y": -0.3337,
+				"cluster": 10,
+				"weights": {
+					"Links": 20.0000,
+					"Total link strength": 20.0000,
+					"Occurrences": 4.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.7500,
+					"Avg. citations": 0.7500,
+					"Avg. norm. citations": 0.6250
+				}
+			},
+			{
+				"id": 188,
+				"label": "religious compliance",
+				"x": 0.2896,
+				"y": 0.3882,
+				"cluster": 22,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 189,
+				"label": "risk management",
+				"x": 1.0664,
+				"y": 0.1228,
+				"cluster": 6,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 190,
+				"label": "rural development",
+				"x": -0.9235,
+				"y": 0.2180,
+				"cluster": 8,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 191,
+				"label": "sakinah finance model",
+				"x": -1.0269,
+				"y": 0.2622,
+				"cluster": 8,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 3.6667
+				}
+			},
+			{
+				"id": 192,
+				"label": "self-realisation theory (srt)",
+				"x": -0.6526,
+				"y": 0.3772,
+				"cluster": 4,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 193,
+				"label": "selfdetermination theory (sdt)",
+				"x": -0.6488,
+				"y": 0.3838,
+				"cluster": 4,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 194,
+				"label": "sharīʿah compliance",
+				"x": -0.0815,
+				"y": -0.0179,
+				"cluster": 13,
+				"weights": {
+					"Links": 29.0000,
+					"Total link strength": 31.0000,
+					"Occurrences": 6.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.1667,
+					"Avg. citations": 0.8333,
+					"Avg. norm. citations": 0.9907
+				}
+			},
+			{
+				"id": 195,
+				"label": "sharīʿah governance",
+				"x": -0.6664,
+				"y": 0.1067,
+				"cluster": 17,
+				"weights": {
+					"Links": 2.0000,
+					"Total link strength": 2.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 196,
+				"label": "sharīʿah non-compliance",
+				"x": 1.0695,
+				"y": -0.0221,
+				"cluster": 6,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 1.5000
+				}
+			},
+			{
+				"id": 197,
+				"label": "sharīʿah objective",
+				"x": -0.3167,
+				"y": 0.2781,
+				"cluster": 4,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 1.5000
+				}
+			},
+			{
+				"id": 198,
+				"label": "sharīʿah screening",
+				"x": 0.5714,
+				"y": 0.3156,
+				"cluster": 1,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 199,
+				"label": "sharīʿah supervisory board (ssb)",
+				"x": 1.0683,
+				"y": -0.3708,
+				"cluster": 2,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 2.0000
+				}
+			},
+			{
+				"id": 200,
+				"label": "sharīʿah-compliant equities",
+				"x": 0.5749,
+				"y": 0.3239,
+				"cluster": 1,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 201,
+				"label": "sharīʿah-compliant firms",
+				"x": -0.0359,
+				"y": 0.0557,
+				"cluster": 12,
+				"weights": {
+					"Links": 12.0000,
+					"Total link strength": 12.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 203,
+				"label": "sharīʿahcompliant banking",
+				"x": -0.1926,
+				"y": 0.3426,
+				"cluster": 5,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 204,
+				"label": "social",
+				"x": 0.0188,
+				"y": -0.0040,
+				"cluster": 12,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 205,
+				"label": "social efficiency",
+				"x": -0.1796,
+				"y": -0.3431,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 206,
+				"label": "social exclusion",
+				"x": -0.7305,
+				"y": 0.1162,
+				"cluster": 17,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 207,
+				"label": "social impact",
+				"x": 1.4355,
+				"y": -0.2253,
+				"cluster": 9,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 0.5000
+				}
+			},
+			{
+				"id": 208,
+				"label": "social index",
+				"x": 0.2604,
+				"y": -0.4316,
+				"cluster": 21,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 4.0000,
+					"Avg. norm. citations": 4.8889
+				}
+			},
+			{
+				"id": 209,
+				"label": "social influence",
+				"x": -0.4713,
+				"y": -0.4617,
+				"cluster": 19,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 210,
+				"label": "social presence",
+				"x": -0.4864,
+				"y": -0.4692,
+				"cluster": 19,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 211,
+				"label": "social protection covenants",
+				"x": 0.1060,
+				"y": 0.4796,
+				"cluster": 14,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 212,
+				"label": "social takāful",
+				"x": 1.4347,
+				"y": -0.2182,
+				"cluster": 9,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 0.5000
+				}
+			},
+			{
+				"id": 213,
+				"label": "socio-economic development",
+				"x": -1.3902,
+				"y": -0.4109,
+				"cluster": 15,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 214,
+				"label": "socio-economic factors",
+				"x": -0.1853,
+				"y": 0.3439,
+				"cluster": 5,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 215,
+				"label": "stakeholder engagement",
+				"x": -0.5762,
+				"y": 0.3018,
+				"cluster": 4,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 10.0000,
+					"Avg. norm. citations": 5.0000
+				}
+			},
+			{
+				"id": 218,
+				"label": "stock returns",
+				"x": -0.0766,
+				"y": -0.0877,
+				"cluster": 13,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 219,
+				"label": "subjective norms",
+				"x": -0.8883,
+				"y": -0.2211,
+				"cluster": 16,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 220,
+				"label": "sustainability",
+				"x": -0.4645,
+				"y": 0.3024,
+				"cluster": 4,
+				"weights": {
+					"Links": 12.0000,
+					"Total link strength": 12.0000,
+					"Occurrences": 3.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 4.3333,
+					"Avg. norm. citations": 2.1667
+				}
+			},
+			{
+				"id": 221,
+				"label": "sustainability agenda",
+				"x": -0.2907,
+				"y": 0.5549,
+				"cluster": 3,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 222,
+				"label": "sustainable banking",
+				"x": -0.4713,
+				"y": -0.3504,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 223,
+				"label": "sustainable development",
+				"x": 1.4423,
+				"y": -0.2241,
+				"cluster": 9,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 0.5000
+				}
+			},
+			{
+				"id": 224,
+				"label": "sustainable development goals (sdgs)",
+				"x": -0.6388,
+				"y": 0.1132,
+				"cluster": 17,
+				"weights": {
+					"Links": 33.0000,
+					"Total link strength": 33.0000,
+					"Occurrences": 7.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 2.2857,
+					"Avg. norm. citations": 1.8413
+				}
+			},
+			{
+				"id": 225,
+				"label": "sustainable finance",
+				"x": -0.2743,
+				"y": 0.5187,
+				"cluster": 3,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.5000,
+					"Avg. citations": 1.5000,
+					"Avg. norm. citations": 2.3333
+				}
+			},
+			{
+				"id": 226,
+				"label": "sustainable financing",
+				"x": -0.4769,
+				"y": -0.3552,
+				"cluster": 7,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 227,
+				"label": "switching intention",
+				"x": -0.4776,
+				"y": -0.4679,
+				"cluster": 19,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.2222
+				}
+			},
+			{
+				"id": 228,
+				"label": "systematic literature review (slr)",
+				"x": -0.7273,
+				"y": 0.1096,
+				"cluster": 17,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 229,
+				"label": "takhāruj (mutual buyout at exit)",
+				"x": 1.0624,
+				"y": 0.1294,
+				"cluster": 6,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 230,
+				"label": "takāful taʿāwuni",
+				"x": -0.1742,
+				"y": 0.4987,
+				"cluster": 3,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 231,
+				"label": "tawḥīdī worldview",
+				"x": -0.6607,
+				"y": 0.3858,
+				"cluster": 4,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 232,
+				"label": "taxonomy",
+				"x": 0.5121,
+				"y": 0.3967,
+				"cluster": 1,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 233,
+				"label": "technology adoption",
+				"x": -0.1354,
+				"y": -0.0590,
+				"cluster": 13,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 2.0000,
+					"Avg. norm. citations": 2.4444
+				}
+			},
+			{
+				"id": 234,
+				"label": "theory of planned behaviour (tpb)",
+				"x": -0.8060,
+				"y": -0.2472,
+				"cluster": 16,
+				"weights": {
+					"Links": 10.0000,
+					"Total link strength": 10.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 236,
+				"label": "threshold effects",
+				"x": -0.0812,
+				"y": -0.0935,
+				"cluster": 13,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 237,
+				"label": "token classification",
+				"x": 0.5082,
+				"y": 0.3890,
+				"cluster": 1,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 238,
+				"label": "tokenised equity",
+				"x": 0.0909,
+				"y": 0.4670,
+				"cluster": 14,
+				"weights": {
+					"Links": 8.0000,
+					"Total link strength": 8.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 239,
+				"label": "transnational financial autonomy",
+				"x": 0.3768,
+				"y": -0.3948,
+				"cluster": 11,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 241,
+				"label": "united arab emirates (uae)",
+				"x": -0.7080,
+				"y": -0.2793,
+				"cluster": 16,
+				"weights": {
+					"Links": 3.0000,
+					"Total link strength": 3.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 242,
+				"label": "village fund allocation",
+				"x": -0.9247,
+				"y": 0.2271,
+				"cluster": 8,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 0.0000
+				}
+			},
+			{
+				"id": 243,
+				"label": "violation",
+				"x": 1.0634,
+				"y": -0.0272,
+				"cluster": 6,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 3.0000,
+					"Avg. norm. citations": 1.5000
+				}
+			},
+			{
+				"id": 244,
+				"label": "wakālah",
+				"x": 1.0744,
+				"y": 0.1323,
+				"cluster": 6,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 245,
+				"label": "waqf",
+				"x": -0.2811,
+				"y": 0.3336,
+				"cluster": 3,
+				"weights": {
+					"Links": 12.0000,
+					"Total link strength": 12.0000,
+					"Occurrences": 3.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.6667,
+					"Avg. citations": 3.3333,
+					"Avg. norm. citations": 3.3519
+				}
+			},
+			{
+				"id": 247,
+				"label": "well-being",
+				"x": 1.4415,
+				"y": -0.2171,
+				"cluster": 9,
+				"weights": {
+					"Links": 4.0000,
+					"Total link strength": 4.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2024.0000,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 0.5000
+				}
+			},
+			{
+				"id": 248,
+				"label": "zakat",
+				"x": 0.7243,
+				"y": 0.3080,
+				"cluster": 1,
+				"weights": {
+					"Links": 18.0000,
+					"Total link strength": 18.0000,
+					"Occurrences": 4.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2025.2500,
+					"Avg. citations": 1.0000,
+					"Avg. norm. citations": 1.4722
+				}
+			},
+			{
+				"id": 250,
+				"label": "ḥifẓ al-biʾah",
+				"x": 0.7647,
+				"y": -0.2844,
+				"cluster": 18,
+				"weights": {
+					"Links": 10.0000,
+					"Total link strength": 11.0000,
+					"Occurrences": 2.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 251,
+				"label": "ṣukūk",
+				"x": 0.6896,
+				"y": -0.2967,
+				"cluster": 18,
+				"weights": {
+					"Links": 6.0000,
+					"Total link strength": 6.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 253,
+				"label": "— bayt al-māl",
+				"x": 0.3721,
+				"y": -0.4069,
+				"cluster": 11,
+				"weights": {
+					"Links": 5.0000,
+					"Total link strength": 5.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			},
+			{
+				"id": 255,
+				"label": "— cash waqf",
+				"x": -0.9026,
+				"y": -0.2139,
+				"cluster": 16,
+				"weights": {
+					"Links": 7.0000,
+					"Total link strength": 7.0000,
+					"Occurrences": 1.0000
+				},
+				"scores": {
+					"Avg. pub. year": 2026.0000,
+					"Avg. citations": 0.0000,
+					"Avg. norm. citations": 1.0000
+				}
+			}
+		],
+		"links": [
+			{
+				"source_id": 1,
+				"target_id": 25,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 1,
+				"target_id": 29,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 1,
+				"target_id": 50,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 1,
+				"target_id": 51,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 1,
+				"target_id": 170,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 1,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 2,
+				"target_id": 59,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 2,
+				"target_id": 77,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 2,
+				"target_id": 90,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 2,
+				"target_id": 107,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 2,
+				"target_id": 144,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 3,
+				"target_id": 89,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 3,
+				"target_id": 134,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 3,
+				"target_id": 164,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 3,
+				"target_id": 230,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 5,
+				"target_id": 77,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 5,
+				"target_id": 110,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 5,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 5,
+				"target_id": 140,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 5,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 6,
+				"target_id": 52,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 6,
+				"target_id": 57,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 6,
+				"target_id": 105,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 6,
+				"target_id": 125,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 6,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 6,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 7,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 7,
+				"target_id": 144,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 7,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 7,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 8,
+				"target_id": 28,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 8,
+				"target_id": 79,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 8,
+				"target_id": 93,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 8,
+				"target_id": 180,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 8,
+				"target_id": 190,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 8,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 8,
+				"target_id": 242,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 9,
+				"target_id": 21,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 9,
+				"target_id": 65,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 9,
+				"target_id": 87,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 9,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 9,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 9,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 9,
+				"target_id": 204,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 10,
+				"target_id": 110,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 10,
+				"target_id": 234,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 10,
+				"target_id": 241,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 14,
+				"target_id": 20,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 14,
+				"target_id": 44,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 14,
+				"target_id": 141,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 14,
+				"target_id": 143,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 15,
+				"target_id": 95,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 15,
+				"target_id": 96,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 15,
+				"target_id": 221,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 15,
+				"target_id": 225,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 16,
+				"target_id": 18,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 16,
+				"target_id": 110,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 16,
+				"target_id": 222,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 16,
+				"target_id": 226,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 17,
+				"target_id": 41,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 17,
+				"target_id": 45,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 17,
+				"target_id": 97,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 17,
+				"target_id": 114,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 17,
+				"target_id": 199,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 18,
+				"target_id": 110,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 18,
+				"target_id": 222,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 18,
+				"target_id": 226,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 19,
+				"target_id": 38,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 19,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 19,
+				"target_id": 171,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 19,
+				"target_id": 188,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 20,
+				"target_id": 44,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 20,
+				"target_id": 141,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 20,
+				"target_id": 143,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 21,
+				"target_id": 65,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 21,
+				"target_id": 87,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 21,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 21,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 21,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 21,
+				"target_id": 204,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 30,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 60,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 77,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 100,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 101,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 119,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 134,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 145,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 186,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 211,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 22,
+				"target_id": 238,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 24,
+				"target_id": 76,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 24,
+				"target_id": 110,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 24,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 24,
+				"target_id": 205,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 25,
+				"target_id": 29,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 25,
+				"target_id": 50,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 25,
+				"target_id": 51,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 25,
+				"target_id": 170,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 25,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 26,
+				"target_id": 78,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 26,
+				"target_id": 92,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 26,
+				"target_id": 118,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 26,
+				"target_id": 130,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 26,
+				"target_id": 133,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 26,
+				"target_id": 173,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 26,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 26,
+				"target_id": 213,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 27,
+				"target_id": 32,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 27,
+				"target_id": 35,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 27,
+				"target_id": 63,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 27,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 28,
+				"target_id": 79,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 28,
+				"target_id": 93,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 28,
+				"target_id": 180,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 28,
+				"target_id": 190,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 28,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 28,
+				"target_id": 242,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 29,
+				"target_id": 50,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 29,
+				"target_id": 51,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 29,
+				"target_id": 170,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 29,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 30,
+				"target_id": 60,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 30,
+				"target_id": 100,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 30,
+				"target_id": 101,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 30,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 30,
+				"target_id": 186,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 30,
+				"target_id": 211,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 30,
+				"target_id": 238,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 31,
+				"target_id": 33,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 31,
+				"target_id": 68,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 31,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 31,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 31,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 32,
+				"target_id": 35,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 32,
+				"target_id": 63,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 32,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 33,
+				"target_id": 68,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 33,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 33,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 33,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 34,
+				"target_id": 79,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 34,
+				"target_id": 83,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 34,
+				"target_id": 153,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 34,
+				"target_id": 191,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 35,
+				"target_id": 63,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 35,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 36,
+				"target_id": 37,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 36,
+				"target_id": 132,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 36,
+				"target_id": 152,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 36,
+				"target_id": 183,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 36,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 37,
+				"target_id": 132,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 37,
+				"target_id": 152,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 37,
+				"target_id": 183,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 37,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 38,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 38,
+				"target_id": 171,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 38,
+				"target_id": 188,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 39,
+				"target_id": 41,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 39,
+				"target_id": 42,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 39,
+				"target_id": 80,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 39,
+				"target_id": 82,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 39,
+				"target_id": 91,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 39,
+				"target_id": 114,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 42,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 45,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 80,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 82,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 91,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 97,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 113,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 114,
+				"strength": 2.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 122,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 123,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 199,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 41,
+				"target_id": 250,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 42,
+				"target_id": 80,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 42,
+				"target_id": 82,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 42,
+				"target_id": 91,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 42,
+				"target_id": 114,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 43,
+				"target_id": 58,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 43,
+				"target_id": 121,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 43,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 43,
+				"target_id": 239,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 43,
+				"target_id": 253,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 44,
+				"target_id": 141,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 44,
+				"target_id": 143,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 45,
+				"target_id": 97,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 45,
+				"target_id": 114,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 45,
+				"target_id": 199,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 46,
+				"target_id": 61,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 46,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 46,
+				"target_id": 161,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 46,
+				"target_id": 167,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 46,
+				"target_id": 250,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 46,
+				"target_id": 251,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 47,
+				"target_id": 110,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 47,
+				"target_id": 149,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 47,
+				"target_id": 160,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 47,
+				"target_id": 168,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 48,
+				"target_id": 56,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 48,
+				"target_id": 86,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 48,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 48,
+				"target_id": 232,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 48,
+				"target_id": 237,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 49,
+				"target_id": 128,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 49,
+				"target_id": 146,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 49,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 49,
+				"target_id": 233,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 50,
+				"target_id": 51,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 50,
+				"target_id": 170,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 50,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 51,
+				"target_id": 170,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 51,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 52,
+				"target_id": 57,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 52,
+				"target_id": 105,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 52,
+				"target_id": 125,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 52,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 52,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 55,
+				"target_id": 85,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 55,
+				"target_id": 113,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 55,
+				"target_id": 141,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 56,
+				"target_id": 86,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 56,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 56,
+				"target_id": 232,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 56,
+				"target_id": 237,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 57,
+				"target_id": 105,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 57,
+				"target_id": 125,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 57,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 57,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 58,
+				"target_id": 121,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 58,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 58,
+				"target_id": 239,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 58,
+				"target_id": 253,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 59,
+				"target_id": 77,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 59,
+				"target_id": 90,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 59,
+				"target_id": 107,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 59,
+				"target_id": 144,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 60,
+				"target_id": 100,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 60,
+				"target_id": 101,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 60,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 60,
+				"target_id": 186,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 60,
+				"target_id": 211,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 60,
+				"target_id": 238,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 61,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 61,
+				"target_id": 161,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 61,
+				"target_id": 167,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 61,
+				"target_id": 250,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 61,
+				"target_id": 251,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 62,
+				"target_id": 77,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 62,
+				"target_id": 162,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 62,
+				"target_id": 203,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 62,
+				"target_id": 214,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 63,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 64,
+				"target_id": 74,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 64,
+				"target_id": 84,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 64,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 65,
+				"target_id": 87,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 65,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 65,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 65,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 65,
+				"target_id": 204,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 66,
+				"target_id": 82,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 66,
+				"target_id": 106,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 66,
+				"target_id": 113,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 67,
+				"target_id": 69,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 67,
+				"target_id": 94,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 67,
+				"target_id": 112,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 67,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 67,
+				"target_id": 208,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 68,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 68,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 68,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 69,
+				"target_id": 94,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 69,
+				"target_id": 112,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 69,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 69,
+				"target_id": 208,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 70,
+				"target_id": 158,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 70,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 70,
+				"target_id": 218,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 70,
+				"target_id": 236,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 71,
+				"target_id": 81,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 71,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 71,
+				"target_id": 181,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 71,
+				"target_id": 198,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 71,
+				"target_id": 200,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 71,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 72,
+				"target_id": 136,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 72,
+				"target_id": 185,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 72,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 74,
+				"target_id": 84,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 74,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 76,
+				"target_id": 110,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 76,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 76,
+				"target_id": 205,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 90,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 107,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 110,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 119,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 126,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 134,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 140,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 144,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 145,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 162,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 194,
+				"strength": 2.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 197,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 203,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 214,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 77,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 78,
+				"target_id": 130,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 78,
+				"target_id": 133,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 78,
+				"target_id": 213,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 79,
+				"target_id": 83,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 79,
+				"target_id": 93,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 79,
+				"target_id": 153,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 79,
+				"target_id": 180,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 79,
+				"target_id": 190,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 79,
+				"target_id": 191,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 79,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 79,
+				"target_id": 242,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 80,
+				"target_id": 82,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 80,
+				"target_id": 91,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 80,
+				"target_id": 114,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 81,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 81,
+				"target_id": 181,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 81,
+				"target_id": 198,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 81,
+				"target_id": 200,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 81,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 82,
+				"target_id": 91,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 82,
+				"target_id": 106,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 82,
+				"target_id": 113,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 82,
+				"target_id": 114,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 83,
+				"target_id": 153,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 83,
+				"target_id": 191,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 84,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 85,
+				"target_id": 113,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 85,
+				"target_id": 141,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 86,
+				"target_id": 88,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 86,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 86,
+				"target_id": 163,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 86,
+				"target_id": 184,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 86,
+				"target_id": 232,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 86,
+				"target_id": 237,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 86,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 87,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 87,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 87,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 87,
+				"target_id": 204,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 88,
+				"target_id": 163,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 88,
+				"target_id": 184,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 88,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 89,
+				"target_id": 134,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 89,
+				"target_id": 156,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 89,
+				"target_id": 164,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 89,
+				"target_id": 225,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 89,
+				"target_id": 230,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 89,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 90,
+				"target_id": 107,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 90,
+				"target_id": 144,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 91,
+				"target_id": 114,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 92,
+				"target_id": 118,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 92,
+				"target_id": 173,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 92,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 93,
+				"target_id": 180,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 93,
+				"target_id": 190,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 93,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 93,
+				"target_id": 242,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 94,
+				"target_id": 112,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 94,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 94,
+				"target_id": 208,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 95,
+				"target_id": 96,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 95,
+				"target_id": 221,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 95,
+				"target_id": 225,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 96,
+				"target_id": 221,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 96,
+				"target_id": 225,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 97,
+				"target_id": 114,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 97,
+				"target_id": 199,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 100,
+				"target_id": 101,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 100,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 100,
+				"target_id": 186,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 100,
+				"target_id": 211,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 100,
+				"target_id": 238,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 101,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 101,
+				"target_id": 186,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 101,
+				"target_id": 211,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 101,
+				"target_id": 238,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 102,
+				"target_id": 103,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 102,
+				"target_id": 117,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 102,
+				"target_id": 192,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 102,
+				"target_id": 193,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 102,
+				"target_id": 231,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 103,
+				"target_id": 117,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 103,
+				"target_id": 192,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 103,
+				"target_id": 193,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 103,
+				"target_id": 231,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 105,
+				"target_id": 125,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 105,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 105,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 106,
+				"target_id": 113,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 107,
+				"target_id": 144,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 120,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 140,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 149,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 160,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 168,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 172,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 174,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 175,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 205,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 209,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 210,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 222,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 226,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 227,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 234,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 110,
+				"target_id": 241,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 112,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 112,
+				"target_id": 208,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 113,
+				"target_id": 122,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 113,
+				"target_id": 123,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 113,
+				"target_id": 141,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 113,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 113,
+				"target_id": 152,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 113,
+				"target_id": 179,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 113,
+				"target_id": 196,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 113,
+				"target_id": 243,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 113,
+				"target_id": 250,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 114,
+				"target_id": 199,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 115,
+				"target_id": 195,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 115,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 116,
+				"target_id": 131,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 116,
+				"target_id": 152,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 116,
+				"target_id": 189,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 116,
+				"target_id": 229,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 116,
+				"target_id": 244,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 117,
+				"target_id": 177,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 117,
+				"target_id": 192,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 117,
+				"target_id": 193,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 117,
+				"target_id": 215,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 117,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 117,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 117,
+				"target_id": 231,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 118,
+				"target_id": 173,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 118,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 119,
+				"target_id": 134,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 119,
+				"target_id": 145,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 140,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 171,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 181,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 186,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 188,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 198,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 200,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 211,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 232,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 237,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 238,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 120,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 121,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 121,
+				"target_id": 239,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 121,
+				"target_id": 253,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 122,
+				"target_id": 123,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 122,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 122,
+				"target_id": 250,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 123,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 123,
+				"target_id": 250,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 125,
+				"target_id": 142,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 125,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 126,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 126,
+				"target_id": 197,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 126,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 126,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 127,
+				"target_id": 129,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 127,
+				"target_id": 135,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 127,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 128,
+				"target_id": 146,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 128,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 128,
+				"target_id": 233,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 129,
+				"target_id": 135,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 129,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 130,
+				"target_id": 133,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 130,
+				"target_id": 213,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 131,
+				"target_id": 152,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 131,
+				"target_id": 189,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 131,
+				"target_id": 229,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 131,
+				"target_id": 244,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 132,
+				"target_id": 152,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 132,
+				"target_id": 183,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 132,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 133,
+				"target_id": 213,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 134,
+				"target_id": 145,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 134,
+				"target_id": 164,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 134,
+				"target_id": 230,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 135,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 136,
+				"target_id": 185,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 136,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 140,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 141,
+				"target_id": 143,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 144,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 161,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 167,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 194,
+				"strength": 2.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 204,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 205,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 208,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 239,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 250,
+				"strength": 2.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 251,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 142,
+				"target_id": 253,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 143,
+				"target_id": 207,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 143,
+				"target_id": 212,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 143,
+				"target_id": 223,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 143,
+				"target_id": 247,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 144,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 144,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 146,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 146,
+				"target_id": 233,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 147,
+				"target_id": 165,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 147,
+				"target_id": 169,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 147,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 147,
+				"target_id": 219,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 147,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 147,
+				"target_id": 234,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 147,
+				"target_id": 255,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 149,
+				"target_id": 160,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 149,
+				"target_id": 168,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 150,
+				"target_id": 178,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 150,
+				"target_id": 206,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 150,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 150,
+				"target_id": 228,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 152,
+				"target_id": 179,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 152,
+				"target_id": 183,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 152,
+				"target_id": 189,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 152,
+				"target_id": 196,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 152,
+				"target_id": 229,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 152,
+				"target_id": 243,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 152,
+				"target_id": 244,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 152,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 153,
+				"target_id": 191,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 156,
+				"target_id": 225,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 156,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 158,
+				"target_id": 194,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 158,
+				"target_id": 218,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 158,
+				"target_id": 236,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 160,
+				"target_id": 168,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 161,
+				"target_id": 167,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 161,
+				"target_id": 250,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 161,
+				"target_id": 251,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 162,
+				"target_id": 203,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 162,
+				"target_id": 214,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 163,
+				"target_id": 184,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 163,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 164,
+				"target_id": 230,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 165,
+				"target_id": 169,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 165,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 165,
+				"target_id": 219,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 165,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 165,
+				"target_id": 234,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 165,
+				"target_id": 255,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 167,
+				"target_id": 250,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 167,
+				"target_id": 251,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 169,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 169,
+				"target_id": 219,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 169,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 169,
+				"target_id": 234,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 169,
+				"target_id": 255,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 170,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 171,
+				"target_id": 188,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 172,
+				"target_id": 174,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 172,
+				"target_id": 175,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 172,
+				"target_id": 209,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 172,
+				"target_id": 210,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 172,
+				"target_id": 227,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 173,
+				"target_id": 187,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 174,
+				"target_id": 175,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 174,
+				"target_id": 209,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 174,
+				"target_id": 210,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 174,
+				"target_id": 227,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 175,
+				"target_id": 209,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 175,
+				"target_id": 210,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 175,
+				"target_id": 227,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 177,
+				"target_id": 215,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 177,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 177,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 178,
+				"target_id": 206,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 178,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 178,
+				"target_id": 228,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 179,
+				"target_id": 196,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 179,
+				"target_id": 243,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 180,
+				"target_id": 190,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 180,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 180,
+				"target_id": 242,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 181,
+				"target_id": 198,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 181,
+				"target_id": 200,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 181,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 183,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 184,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 185,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 186,
+				"target_id": 211,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 186,
+				"target_id": 238,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 187,
+				"target_id": 219,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 187,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 187,
+				"target_id": 234,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 187,
+				"target_id": 255,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 189,
+				"target_id": 229,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 189,
+				"target_id": 244,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 190,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 190,
+				"target_id": 242,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 192,
+				"target_id": 193,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 192,
+				"target_id": 231,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 193,
+				"target_id": 231,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 194,
+				"target_id": 197,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 194,
+				"target_id": 201,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 194,
+				"target_id": 204,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 194,
+				"target_id": 218,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 194,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 194,
+				"target_id": 233,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 194,
+				"target_id": 236,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 194,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 195,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 196,
+				"target_id": 243,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 197,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 197,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 198,
+				"target_id": 200,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 198,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 200,
+				"target_id": 248,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 201,
+				"target_id": 204,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 201,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 203,
+				"target_id": 214,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 206,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 206,
+				"target_id": 228,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 207,
+				"target_id": 212,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 207,
+				"target_id": 223,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 207,
+				"target_id": 247,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 209,
+				"target_id": 210,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 209,
+				"target_id": 227,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 210,
+				"target_id": 227,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 211,
+				"target_id": 238,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 212,
+				"target_id": 223,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 212,
+				"target_id": 247,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 215,
+				"target_id": 220,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 215,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 218,
+				"target_id": 236,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 219,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 219,
+				"target_id": 234,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 219,
+				"target_id": 255,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 220,
+				"target_id": 224,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 220,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 221,
+				"target_id": 225,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 222,
+				"target_id": 226,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 223,
+				"target_id": 247,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 224,
+				"target_id": 228,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 224,
+				"target_id": 234,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 224,
+				"target_id": 242,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 224,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 224,
+				"target_id": 255,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 225,
+				"target_id": 245,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 229,
+				"target_id": 244,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 232,
+				"target_id": 237,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 234,
+				"target_id": 241,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 234,
+				"target_id": 255,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 239,
+				"target_id": 253,
+				"strength": 1.0000
+			},
+			{
+				"source_id": 250,
+				"target_id": 251,
+				"strength": 1.0000
+			}
+		]
+	}
+}

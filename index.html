@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Finance Journal Finder — INCEIF University</title>
+<title>Islamic &amp; Finance Journal Finder — INCEIF University</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
@@ -267,6 +267,85 @@
   }
   .empty-state .serif{font-size:20px;color:var(--navy-900);margin-bottom:8px;}
 
+  .card-links{
+    margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  }
+  .card-links a{
+    font-size:12.5px;color:var(--navy-800);text-decoration:none;border-bottom:1px solid var(--line);
+    padding:2px 0;
+  }
+  .card-links a:hover{color:var(--navy-950);border-color:var(--navy-800);}
+  .net-btn{
+    font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;
+    color:var(--teal-600);background:rgba(15,92,82,0.08);border:1px solid rgba(15,92,82,0.3);
+    border-radius:999px;padding:5px 13px 5px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+    transition:background .15s ease;
+  }
+  .net-btn:hover{background:rgba(15,92,82,0.16);}
+  .net-btn svg{width:12px;height:12px;flex:none;}
+
+  /* ---------- Network modal ---------- */
+  .net-overlay{
+    position:fixed;inset:0;background:rgba(10,20,40,0.6);backdrop-filter:blur(2px);
+    display:flex;align-items:center;justify-content:center;z-index:1000;padding:24px;
+  }
+  .net-overlay.hidden{display:none;}
+  .net-modal{
+    background:var(--cream-50);border-radius:14px;width:min(1100px,100%);height:min(760px,92vh);
+    display:flex;flex-direction:column;overflow:hidden;box-shadow:0 40px 80px -20px rgba(0,0,0,0.5);
+  }
+  .net-head{
+    background:var(--navy-950);color:var(--cream-50);padding:16px 22px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;flex:none;
+  }
+  .net-head h4{margin:0;font-size:16px;font-family:'Fraunces',serif;font-weight:600;}
+  .net-head .net-sub{font-size:11.5px;color:var(--gold-300);font-family:'IBM Plex Mono',monospace;margin-top:2px;}
+  .net-close{
+    background:none;border:1px solid rgba(255,255,255,0.3);color:var(--cream-50);border-radius:8px;
+    width:32px;height:32px;cursor:pointer;font-size:16px;line-height:1;flex:none;
+  }
+  .net-close:hover{background:rgba(255,255,255,0.12);}
+  .net-toolbar{
+    display:flex;align-items:center;gap:10px;padding:10px 18px;border-bottom:1px solid var(--line);
+    background:var(--white);flex:none;flex-wrap:wrap;
+  }
+  .net-toolbar input{
+    flex:1 1 220px;border:1px solid var(--line);border-radius:7px;padding:8px 12px;font-size:13px;
+    font-family:'Inter',sans-serif;outline:none;
+  }
+  .net-toolbar input:focus{border-color:var(--navy-700);}
+  .net-hint{font-size:11px;color:var(--ink-400);font-family:'IBM Plex Mono',monospace;flex:none;}
+  .net-canvas-wrap{
+    flex:1;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%, #ffffff 0%, #f1ece0 100%);
+    cursor:grab;
+  }
+  .net-canvas-wrap.grabbing{cursor:grabbing;}
+  .net-canvas-wrap canvas{position:absolute;top:0;left:0;transform-origin:0 0;}
+  .net-status{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    color:var(--ink-400);font-size:13px;font-family:'IBM Plex Mono',monospace;text-align:center;padding:20px;
+  }
+  .net-status.hidden{display:none;}
+  .net-tooltip{
+    position:absolute;pointer-events:none;background:var(--navy-950);color:var(--cream-50);
+    font-size:11.5px;padding:5px 10px;border-radius:6px;transform:translate(-50%,-130%);
+    white-space:nowrap;z-index:5;font-family:'Inter',sans-serif;
+  }
+  .net-tooltip.hidden{display:none;}
+  .net-legend{
+    position:absolute;bottom:12px;left:14px;font-size:10.5px;color:var(--ink-400);
+    font-family:'IBM Plex Mono',monospace;background:rgba(255,255,255,0.85);padding:6px 10px;border-radius:7px;
+    border:1px solid var(--line);
+  }
+  .net-zoom{
+    position:absolute;bottom:12px;right:14px;display:flex;flex-direction:column;gap:4px;
+  }
+  .net-zoom button{
+    width:30px;height:30px;border-radius:7px;border:1px solid var(--line);background:var(--white);
+    cursor:pointer;font-size:15px;color:var(--navy-900);
+  }
+  .net-zoom button:hover{background:var(--cream-100);}
+
   footer{
     background:var(--navy-950);color:#96a7b8;text-align:center;padding:36px 6vw 30px;font-size:12.5px;
   }
@@ -338,8 +417,34 @@
 <footer>
   <img src="assets/kmc-logo-white.png" alt="INCEIF University Knowledge Management Centre" class="footer-logo">
   <p>Built for <b>INCEIF University</b> authors & researchers · Data reflects indexed keyword records per journal, not live citation metrics · Verify current quartile/index status before submission.</p>
-  <p>Developed by: <b>Hanif</b> <i>(Last Update: 20 July 2026)</i></p>
 </footer>
+
+<div class="net-overlay hidden" id="netOverlay">
+  <div class="net-modal">
+    <div class="net-head">
+      <div>
+        <h4 id="netTitle">Keyword network</h4>
+        <div class="net-sub" id="netSub"></div>
+      </div>
+      <button class="net-close" id="netClose" aria-label="Close">&times;</button>
+    </div>
+    <div class="net-toolbar">
+      <input type="text" id="netSearch" placeholder="Highlight a term in this network…" autocomplete="off">
+      <span class="net-hint">Drag to pan · Scroll to zoom · Click a node for detail</span>
+    </div>
+    <div class="net-canvas-wrap" id="netCanvasWrap">
+      <div class="net-status" id="netStatus">Loading network…</div>
+      <canvas id="netCanvas"></canvas>
+      <div class="net-tooltip hidden" id="netTooltip"></div>
+      <div class="net-legend" id="netLegend"></div>
+      <div class="net-zoom">
+        <button id="netZoomIn" aria-label="Zoom in">+</button>
+        <button id="netZoomOut" aria-label="Zoom out">−</button>
+        <button id="netZoomReset" aria-label="Reset view">⤾</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="data.js"></script>
 <script>
@@ -410,6 +515,15 @@ const COVER_IMAGES = {
   'Journal of King Abdulaziz University, Islamic Economics': 'assets/jkau.jpg',
   'Emerging Markets Finance and Trade': 'assets/emft.jpg',
   'ISRA International Journal of Islamic Finance': 'assets/ijif.jpg',
+};
+
+const NETWORK_FILES = {
+  'Borsa Istanbul Review': 'assets/VOSviewer_BIR.json',
+  'Emerging Markets Finance and Trade': 'assets/VOSviewer_EMFT.json',
+  'International Journal of Islamic and Middle Eastern Finance and Management': 'assets/VOSviewer_IJIMEFM.json',
+  'Journal of Islamic Accounting and Business Research': 'assets/VOSviewer_JIABR.json',
+  'ISRA International Journal of Islamic Finance': 'assets/VOSviewer_IIJIF.json',
+  'Journal of King Abdulaziz University, Islamic Economics': 'assets/VOSviewer_JKAU.json',
 };
 
 function initials(name){
@@ -483,9 +597,10 @@ function render(matches, q){
           ${q ? `<span><b>${m.hits.length}</b> matching keyword${m.hits.length!==1?'s':''}</span>` : ''}
         </div>
         <div class="chip-row">${chipHtml}</div>
-        <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+        <div class="card-links">
           <a href="${j.homepage}" target="_blank" rel="noopener">Official Journal Homepage</a>
           <a href="${j.scopus_page}" target="_blank" rel="noopener">Scopus Source Page</a>
+          ${NETWORK_FILES[j.name] ? `<button class="net-btn" data-journal="${escapeHtml(j.name)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="18" r="2.4"/><line x1="7.7" y1="7.2" x2="10.7" y2="16.3"/><line x1="16.3" y1="8.2" x2="13.3" y2="16.3"/><line x1="8.2" y1="6.3" x2="15.8" y2="6.8"/></svg> Keyword Network</button>` : ''}
         </div>
       </div>
       <div class="quartile-badge ${j.quartile}">${j.quartile}<span class="badge-sub">Quartile</span></div>
@@ -504,8 +619,234 @@ els.quartileGroup.addEventListener('click', e=>{
 els.search.addEventListener('input', search);
 els.clear.addEventListener('click', ()=>{ els.search.value=''; search(); els.search.focus(); });
 
+els.results.addEventListener('click', e=>{
+  const btn = e.target.closest('.net-btn');
+  if(!btn) return;
+  openNetworkModal(btn.dataset.journal);
+});
+
 buildStats();
 search();
+
+/* ===================== Keyword Network modal ===================== */
+
+const netEls = {
+  overlay: document.getElementById('netOverlay'),
+  title: document.getElementById('netTitle'),
+  sub: document.getElementById('netSub'),
+  close: document.getElementById('netClose'),
+  wrap: document.getElementById('netCanvasWrap'),
+  canvas: document.getElementById('netCanvas'),
+  status: document.getElementById('netStatus'),
+  tooltip: document.getElementById('netTooltip'),
+  legend: document.getElementById('netLegend'),
+  search: document.getElementById('netSearch'),
+  zoomIn: document.getElementById('netZoomIn'),
+  zoomOut: document.getElementById('netZoomOut'),
+  zoomReset: document.getElementById('netZoomReset'),
+};
+
+const netCache = {};      // file -> parsed network data
+let netCurrent = null;    // { items, links, byId }
+let netView = { scale: 1, tx: 0, ty: 0 };
+const NET_SIZE = 1500;    // internal canvas resolution (square)
+
+function clusterColor(cluster){
+  const hue = (Number(cluster || 0) * 47) % 360;
+  return `hsl(${hue}, 62%, 46%)`;
+}
+
+async function loadNetwork(file){
+  if(netCache[file]) return netCache[file];
+  const res = await fetch(file);
+  if(!res.ok) throw new Error('HTTP ' + res.status);
+  const text = await res.text();
+  const json = JSON.parse(text.replace(/^\uFEFF/, ''));
+  const items = json.network.items;
+  const links = json.network.links;
+  const byId = {};
+  items.forEach(it => byId[it.id] = it);
+
+  const xs = items.map(i=>i.x), ys = items.map(i=>i.y);
+  const minX = Math.min(...xs), maxX = Math.max(...xs);
+  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  const pad = NET_SIZE * 0.07;
+  const span = Math.max(maxX - minX, maxY - minY) || 1;
+  const scale = (NET_SIZE - pad*2) / span;
+  const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+  items.forEach(it=>{
+    it._px = NET_SIZE/2 + (it.x - cx) * scale;
+    it._py = NET_SIZE/2 + (it.y - cy) * scale;
+    it._weight = (it.weights && (it.weights['Occurrences'] ?? it.weights['Total link strength'])) || 1;
+  });
+  const maxW = Math.max(...items.map(i=>i._weight));
+  items.forEach(it=>{ it._r = 3 + Math.sqrt(it._weight / maxW) * 13; });
+
+  const data = { items, links, byId, clusterCount: new Set(items.map(i=>i.cluster)).size };
+  netCache[file] = data;
+  return data;
+}
+
+function drawNetwork(data, highlightText){
+  const canvas = netEls.canvas;
+  canvas.width = NET_SIZE; canvas.height = NET_SIZE;
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0,0,NET_SIZE,NET_SIZE);
+
+  const term = (highlightText || '').trim().toLowerCase();
+  const matchIds = new Set();
+  if(term){
+    data.items.forEach(it => { if(it.label.toLowerCase().includes(term)) matchIds.add(it.id); });
+  }
+
+  // links
+  ctx.lineWidth = 1;
+  data.links.forEach(l=>{
+    const a = data.byId[l.source_id], b = data.byId[l.target_id];
+    if(!a || !b) return;
+    const dim = term && !(matchIds.has(a.id) || matchIds.has(b.id));
+    ctx.strokeStyle = dim ? 'rgba(20,30,45,0.035)' : 'rgba(20,30,45,0.12)';
+    ctx.beginPath();
+    ctx.moveTo(a._px, a._py);
+    ctx.lineTo(b._px, b._py);
+    ctx.stroke();
+  });
+
+  // nodes
+  data.items.forEach(it=>{
+    const isMatch = matchIds.has(it.id);
+    const dim = term && !isMatch;
+    ctx.beginPath();
+    ctx.arc(it._px, it._py, it._r, 0, Math.PI*2);
+    ctx.fillStyle = dim ? 'rgba(20,30,45,0.10)' : clusterColor(it.cluster);
+    ctx.globalAlpha = dim ? 1 : 0.88;
+    ctx.fill();
+    if(isMatch){
+      ctx.lineWidth = 2.5;
+      ctx.strokeStyle = '#c79a3c';
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  });
+
+  // labels for the largest nodes, or all matches when searching
+  const labelSet = term
+    ? data.items.filter(it => matchIds.has(it.id))
+    : [...data.items].sort((a,b)=>b._weight - a._weight).slice(0, 35);
+  ctx.font = '600 15px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  labelSet.forEach(it=>{
+    ctx.fillStyle = 'rgba(10,20,35,0.85)';
+    ctx.fillText(it.label, it._px, it._py - it._r - 5);
+  });
+}
+
+function applyNetTransform(){
+  netEls.canvas.style.transform = `translate(${netView.tx}px, ${netView.ty}px) scale(${netView.scale})`;
+}
+
+function fitNetworkToView(){
+  const rect = netEls.wrap.getBoundingClientRect();
+  const scale = Math.min(rect.width, rect.height) / NET_SIZE * 0.94;
+  netView = { scale, tx: (rect.width - NET_SIZE*scale)/2, ty: (rect.height - NET_SIZE*scale)/2 };
+  applyNetTransform();
+}
+
+async function openNetworkModal(journalName){
+  const file = NETWORK_FILES[journalName];
+  if(!file) return;
+  netEls.title.textContent = journalName;
+  netEls.sub.textContent = 'Keyword co-occurrence map (VOSviewer)';
+  netEls.overlay.classList.remove('hidden');
+  netEls.status.classList.remove('hidden');
+  netEls.status.textContent = 'Loading network…';
+  netEls.legend.textContent = '';
+  netEls.search.value = '';
+  document.body.style.overflow = 'hidden';
+
+  try{
+    const data = await loadNetwork(file);
+    netCurrent = data;
+    drawNetwork(data, '');
+    fitNetworkToView();
+    netEls.status.classList.add('hidden');
+    netEls.legend.textContent = `${data.items.length.toLocaleString()} terms · ${data.links.length.toLocaleString()} links · ${data.clusterCount} clusters`;
+  }catch(err){
+    netEls.status.textContent = 'Could not load this network file. If you are viewing this site by opening index.html directly, your browser blocks local file requests — please serve the folder from a web server (or host it online) and try again.';
+  }
+}
+
+function closeNetworkModal(){
+  netEls.overlay.classList.add('hidden');
+  document.body.style.overflow = '';
+  netCurrent = null;
+}
+
+netEls.close.addEventListener('click', closeNetworkModal);
+netEls.overlay.addEventListener('click', e=>{ if(e.target === netEls.overlay) closeNetworkModal(); });
+document.addEventListener('keydown', e=>{ if(e.key === 'Escape' && !netEls.overlay.classList.contains('hidden')) closeNetworkModal(); });
+
+netEls.search.addEventListener('input', ()=>{
+  if(netCurrent) drawNetwork(netCurrent, netEls.search.value);
+});
+
+// pan
+let netDragging = false, netLastX = 0, netLastY = 0;
+netEls.wrap.addEventListener('mousedown', e=>{
+  netDragging = true; netLastX = e.clientX; netLastY = e.clientY;
+  netEls.wrap.classList.add('grabbing');
+});
+window.addEventListener('mouseup', ()=>{ netDragging = false; netEls.wrap.classList.remove('grabbing'); });
+window.addEventListener('mousemove', e=>{
+  if(!netDragging) return;
+  netView.tx += e.clientX - netLastX;
+  netView.ty += e.clientY - netLastY;
+  netLastX = e.clientX; netLastY = e.clientY;
+  applyNetTransform();
+});
+
+// zoom
+function netZoomBy(factor, cx, cy){
+  const rect = netEls.wrap.getBoundingClientRect();
+  const px = cx ?? rect.width/2, py = cy ?? rect.height/2;
+  const worldX = (px - netView.tx) / netView.scale;
+  const worldY = (py - netView.ty) / netView.scale;
+  netView.scale = Math.min(8, Math.max(0.15, netView.scale * factor));
+  netView.tx = px - worldX * netView.scale;
+  netView.ty = py - worldY * netView.scale;
+  applyNetTransform();
+}
+netEls.wrap.addEventListener('wheel', e=>{
+  e.preventDefault();
+  const rect = netEls.wrap.getBoundingClientRect();
+  netZoomBy(e.deltaY < 0 ? 1.12 : 0.89, e.clientX - rect.left, e.clientY - rect.top);
+}, { passive:false });
+netEls.zoomIn.addEventListener('click', ()=> netZoomBy(1.25));
+netEls.zoomOut.addEventListener('click', ()=> netZoomBy(0.8));
+netEls.zoomReset.addEventListener('click', fitNetworkToView);
+
+// hover tooltip + click (nearest node in canvas space)
+netEls.wrap.addEventListener('mousemove', e=>{
+  if(!netCurrent || netDragging){ netEls.tooltip.classList.add('hidden'); return; }
+  const rect = netEls.wrap.getBoundingClientRect();
+  const x = (e.clientX - rect.left - netView.tx) / netView.scale;
+  const y = (e.clientY - rect.top - netView.ty) / netView.scale;
+  let nearest = null, best = 14;
+  for(const it of netCurrent.items){
+    const d = Math.hypot(it._px - x, it._py - y);
+    if(d < best){ best = d; nearest = it; }
+  }
+  if(nearest){
+    netEls.tooltip.textContent = nearest.label + ' (' + Math.round(nearest._weight) + ')';
+    netEls.tooltip.style.left = (e.clientX - rect.left) + 'px';
+    netEls.tooltip.style.top = (e.clientY - rect.top) + 'px';
+    netEls.tooltip.classList.remove('hidden');
+  } else {
+    netEls.tooltip.classList.add('hidden');
+  }
+});
+netEls.wrap.addEventListener('mouseleave', ()=> netEls.tooltip.classList.add('hidden'));
+window.addEventListener('resize', ()=>{ if(netCurrent) fitNetworkToView(); });
 </script>
 </body>
 </html>
