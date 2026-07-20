@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Islamic Finance Journal Finder — INCEIF University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#0a1f38;
+    --navy-900:#0e2c4c;
+    --navy-800:#163b62;
+    --navy-700:#20507f;
+    --gold-600:#a9791f;
+    --gold-500:#c79a3c;
+    --gold-300:#e6c789;
+    --teal-600:#0f5c52;
+    --teal-500:#187a6d;
+    --cream-50:#faf7f0;
+    --cream-100:#f3ecdd;
+    --ink-900:#111a24;
+    --ink-600:#4a5a68;
+    --ink-400:#7c8b98;
+    --line:#dfd6bf;
+    --white:#ffffff;
+    --q1:#0f5c52;
+    --q2:#a9791f;
+    --q3:#8a3b2b;
+    --q4:#5c5346;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream-50);
+    color:var(--ink-900);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  .mono{
+    font-family:'IBM Plex Mono',monospace;
+    letter-spacing:0.02em;
+  }
+
+  /* ---------- Texture backdrop ---------- */
+  .weave-bg{
+    position:absolute; inset:0; opacity:0.06; pointer-events:none;
+    background-image:
+      repeating-linear-gradient(45deg, var(--gold-500) 0, var(--gold-500) 1px, transparent 1px, transparent 14px),
+      repeating-linear-gradient(-45deg, var(--gold-500) 0, var(--gold-500) 1px, transparent 1px, transparent 14px);
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    background:linear-gradient(160deg, var(--navy-950) 0%, var(--navy-900) 55%, var(--navy-800) 100%);
+    color:var(--cream-50);
+    position:relative;
+    overflow:hidden;
+    padding:0 0 64px;
+  }
+  .topbar{
+    position:relative;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:26px 6vw 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .brand-logo{
+    height:56px;width:auto;display:block;
+  }
+  .topbar-tag{
+    font-size:12px;color:var(--navy-700);background:rgba(230,199,137,0.12);
+    border:1px solid rgba(230,199,137,0.35);color:var(--gold-300);
+    padding:6px 14px;border-radius:999px;letter-spacing:0.04em;
+  }
+
+  .hero{
+    position:relative;z-index:2;
+    padding:56px 6vw 0;
+    max-width:1180px;margin:0 auto;
+  }
+  .eyebrow{
+    text-transform:uppercase;font-size:11.5px;letter-spacing:0.22em;color:var(--gold-300);
+    display:flex;align-items:center;gap:10px;margin-bottom:22px;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold-500);}
+  h1.hero-title{
+    font-size:clamp(34px,5vw,58px);
+    line-height:1.04;
+    max-width:820px;
+    margin:0 0 20px;
+    color:var(--cream-50);
+  }
+  h1.hero-title em{
+    font-style:italic;color:var(--gold-300);
+  }
+  .hero-sub{
+    font-size:16.5px;line-height:1.6;color:#c7d2de;max-width:760px;margin:0 0 40px;
+  }
+
+  /* ---------- Search console ---------- */
+  .console{
+    position:relative;z-index:2;
+    background:var(--cream-50);
+    border:1px solid var(--line);
+    border-radius:14px;
+    box-shadow:0 30px 60px -20px rgba(10,20,40,0.45);
+    padding:26px 26px 22px;
+    margin-top:6px;
+  }
+  .console-row{
+    display:flex;gap:14px;align-items:stretch;flex-wrap:wrap;
+  }
+  .search-field{
+    flex:1 1 320px;
+    display:flex;align-items:center;gap:10px;
+    border:1.5px solid var(--navy-900);
+    border-radius:9px;
+    padding:0 16px;
+    background:var(--white);
+  }
+  .search-field svg{flex:none;color:var(--navy-800);}
+  .search-field input{
+    border:none;outline:none;background:transparent;
+    padding:15px 0;font-size:15.5px;width:100%;color:var(--ink-900);font-family:'Inter',sans-serif;
+  }
+  .search-field input::placeholder{color:var(--ink-400);}
+  .clear-btn{
+    border:none;background:none;color:var(--ink-400);cursor:pointer;font-size:13px;padding:4px;
+    display:none;
+  }
+
+  .quartile-group{
+    display:flex;gap:8px;align-items:center;flex:none;
+  }
+  .qbtn{
+    border:1.5px solid var(--line);
+    background:var(--white);
+    color:var(--ink-600);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;font-weight:500;
+    padding:0 16px;
+    height:52px;
+    border-radius:9px;
+    cursor:pointer;
+    transition:all .15s ease;
+    letter-spacing:0.03em;
+  }
+  .qbtn:hover{border-color:var(--navy-800);}
+  .qbtn.active[data-q="Q1"]{background:var(--q1);border-color:var(--q1);color:#fff;}
+  .qbtn.active[data-q="Q2"]{background:var(--q2);border-color:var(--q2);color:#fff;}
+  .qbtn.active[data-q="Q3"]{background:var(--q3);border-color:var(--q3);color:#fff;}
+  .qbtn.active[data-q="Q4"]{background:var(--q4);border-color:var(--q4);color:#fff;}
+  .qbtn.active[data-q="ALL"]{background:var(--navy-900);border-color:var(--navy-900);color:#fff;}
+
+  .filter-row{
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    padding-top:16px;margin-top:16px;border-top:1px dashed var(--line);
+  }
+  .filter-label{
+    font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-400);flex:none;
+  }
+  .filter-row .qbtn{height:38px;padding:0 15px;font-size:12.5px;}
+
+  .console-meta{
+    display:flex;justify-content:space-between;align-items:center;
+    margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);
+    font-size:12.5px;color:var(--ink-400);
+  }
+  .console-meta b{color:var(--ink-900);font-weight:600;}
+
+  /* ---------- Stat strip ---------- */
+  .stat-strip{
+    max-width:1180px;margin:44px auto 0;padding:0 6vw;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  }
+  .stat{
+    background:var(--white);padding:20px 22px;
+  }
+  .stat .num{font-family:'Fraunces',serif;font-size:28px;font-weight:600;color:var(--navy-900);}
+  .stat .lbl{font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-400);margin-top:4px;}
+
+  /* ---------- Results ---------- */
+  main{max-width:1180px;margin:0 auto;padding:52px 6vw 100px;}
+  .results-head{
+    display:flex;align-items:baseline;justify-content:space-between;margin-bottom:22px;flex-wrap:wrap;gap:10px;
+  }
+  .results-head h2{font-size:22px;margin:0;color:var(--navy-950);}
+  .results-count{font-size:13px;color:var(--ink-400);font-family:'IBM Plex Mono',monospace;}
+
+  .card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:24px 26px;
+    margin-bottom:16px;
+    display:grid;
+    grid-template-columns:64px 56px 1fr auto;
+    gap:22px;
+    align-items:start;
+    transition:border-color .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{border-color:var(--navy-700);box-shadow:0 12px 30px -18px rgba(10,20,40,0.35);}
+
+  .cover{
+    width:64px;height:88px;border-radius:4px;overflow:hidden;flex:none;
+    box-shadow:0 6px 16px -6px rgba(10,20,40,0.4), inset 2px 0 0 rgba(0,0,0,0.15);
+  }
+  .cover svg{display:block;width:100%;height:100%;}
+  .cover img{display:block;width:100%;height:100%;object-fit:cover;}
+
+  .rank{
+    font-family:'Fraunces',serif;font-weight:600;font-size:26px;color:var(--gold-500);
+    line-height:1;padding-top:2px;
+  }
+
+  .card-name{
+    font-size:19px;font-weight:600;color:var(--navy-950);margin:0 0 6px;line-height:1.3;
+  }
+  .card-meta{
+    display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12.5px;color:var(--ink-600);margin-bottom:12px;
+  }
+  .card-meta span b{color:var(--ink-900);font-weight:600;}
+
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;}
+  .chip{
+    font-size:11.5px;padding:4px 10px;border-radius:999px;
+    background:var(--cream-100);color:var(--navy-800);border:1px solid var(--line);
+    font-family:'IBM Plex Mono',monospace;
+  }
+  .chip.hit{background:var(--teal-600);color:#fff;border-color:var(--teal-600);}
+  .chip.more{background:transparent;color:var(--ink-400);border-style:dashed;}
+
+  .quartile-badge{
+    align-self:start;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;font-weight:600;
+    padding:7px 16px;border-radius:8px;color:#fff;
+    text-align:center;min-width:56px;
+  }
+  .quartile-badge.Q1{background:var(--q1);}
+  .quartile-badge.Q2{background:var(--q2);}
+  .quartile-badge.Q3{background:var(--q3);}
+  .quartile-badge.Q4{background:var(--q4);}
+  .badge-sub{
+    display:block;font-size:9.5px;letter-spacing:0.1em;color:var(--ink-400);
+    margin-top:6px;font-family:'Inter',sans-serif;text-transform:uppercase;text-align:center;
+  }
+
+  .empty-state{
+    text-align:center;padding:70px 20px;color:var(--ink-400);
+    border:1px dashed var(--line);border-radius:12px;background:var(--white);
+  }
+  .empty-state .serif{font-size:20px;color:var(--navy-900);margin-bottom:8px;}
+
+  /* ---------- Links & Interaction styling ---------- */
+  .card-links a {
+    font-size: 13px;
+    color: var(--navy-700);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .card-links a:hover {
+    color: var(--gold-600);
+    text-decoration: underline;
+  }
+  .card-links .vosviewer-btn {
+    color: var(--teal-600);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .card-links .vosviewer-btn:hover {
+    color: var(--teal-500);
+  }
+
+  /* ---------- Modal Component ---------- */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 31, 56, 0.75);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+  }
+  .modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-container {
+    background: var(--cream-50);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1040px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 40px 80px -24px rgba(0,0,0,0.5);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+  }
+  .modal-overlay.active .modal-container {
+    transform: translateY(0);
+  }
+  .modal-header {
+    background: var(--navy-950);
+    color: var(--cream-50);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--gold-500);
+  }
+  .modal-header h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .modal-close {
+    background: transparent;
+    border: none;
+    color: var(--gold-300);
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    transition: color 0.2s;
+  }
+  .modal-close:hover {
+    color: var(--white);
+  }
+  .modal-body {
+    flex: 1;
+    background: var(--white);
+    position: relative;
+  }
+  .modal-body iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  footer{
+    background:var(--navy-950);color:#96a7b8;text-align:center;padding:36px 6vw 30px;font-size:12.5px;
+  }
+  .footer-logo{height:44px;width:auto;opacity:0.9;margin-bottom:16px;}
+  footer p{margin:0;max-width:640px;margin-left:auto;margin-right:auto;line-height:1.6;}
+  footer b{color:var(--gold-300);}
+
+  @media (max-width:640px){
+    .card{grid-template-columns:1fr;}
+    .cover{display:none;}
+    .quartile-badge{justify-self:start;}
+    .stat-strip{grid-template-columns:repeat(2,1fr);}
+    .console-row{flex-direction:column;}
+    .quartile-group{width:100%;justify-content:stretch;}
+    .qbtn{flex:1;}
+    .modal-container { height: 85vh; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="weave-bg"></div>
+  <div class="topbar">
+    <div class="brand">
+      <img src="assets/kmc-logo-white.png" alt="INCEIF University Knowledge Management Centre" class="brand-logo">
+    </div>
+    <div class="topbar-tag">Islamic Finance &amp; Economics Index</div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Where to publish next</div>
+    <h1 class="hero-title">Match your research to the <em>right</em> journal — by keyword and quartile.</h1>
+    <p class="hero-sub">Search across indexed Islamic finance, banking and economics journals. Type a keyword from your paper's abstract, filter by Scopus/WoS quartile, and see ranked matches instantly.</p>
+
+    <div class="console">
+      <div class="console-row">
+        <div class="search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input id="searchInput" type="text" placeholder="Try “waqf”, “sharīʿah governance”, “sukuk”, “malaysia”…" autocomplete="off">
+          <button class="clear-btn" id="clearBtn">Clear</button>
+        </div>
+      </div>
+      <div class="filter-row" id="quartileGroup">
+        <span class="filter-label">Filter by quartile</span>
+        <button class="qbtn active" data-q="ALL">All</button>
+        <button class="qbtn" data-q="Q1">Q1</button>
+        <button class="qbtn" data-q="Q2">Q2</button>
+        <button class="qbtn" data-q="Q3">Q3</button>
+        <button class="qbtn" data-q="Q4">Q4</button>
+      </div>
+      <div class="console-meta">
+        <span>Indexed on <b>keyword co-occurrence</b> across each journal's published corpus</span>
+        <span id="dataMeta">loading index…</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-strip" id="statStrip"></div>
+</header>
+
+<main>
+  <div class="results-head">
+    <h2 class="serif">Ranked matches</h2>
+    <div class="results-count" id="resultsCount"></div>
+  </div>
+  <div id="results"></div>
+</main>
+
+<!-- Interactive Dynamic Overlay Modal -->
+<div class="modal-overlay" id="vosModal">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h3 id="modalJournalTitle" class="serif">Journal Network Map</h3>
+      <button class="modal-close" id="closeModal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <iframe id="vosFrame" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <img src="assets/kmc-logo-white.png" alt="INCEIF University Knowledge Management Centre" class="footer-logo">
+  <p>Built for <b>INCEIF University</b> authors & researchers[cite: 1] · Data reflects indexed keyword records per journal, not live citation metrics[cite: 1] · Verify current quartile/index status before submission[cite: 1].</p>
+  <p>Developed by: <b>Hanif</b> <i>(Last Update: 20 July 2026)</i>[cite: 1]</p>
+</footer>
+
+<script src="data.js"></script>
+<script>
+const DATA = window.__JOURNAL_DATA__;[cite: 1]
+
+const els = {
+  search: document.getElementById('searchInput'),[cite: 1]
+  clear: document.getElementById('clearBtn'),[cite: 1]
+  results: document.getElementById('results'),[cite: 1]
+  count: document.getElementById('resultsCount'),[cite: 1]
+  statStrip: document.getElementById('statStrip'),[cite: 1]
+  dataMeta: document.getElementById('dataMeta'),[cite: 1]
+  quartileGroup: document.getElementById('quartileGroup'),[cite: 1]
+  modal: document.getElementById('vosModal'),
+  modalTitle: document.getElementById('modalJournalTitle'),
+  modalFrame: document.getElementById('vosFrame'),
+  modalClose: document.getElementById('closeModal')
+};
+
+let activeQuartile = 'ALL';[cite: 1]
+
+// Explicit static map link values requested by the user
+const VOSVIEWER_FILES = {
+  'Borsa Istanbul Review': 'VOSviewer_BIR.json',
+  'Emerging Markets Finance and Trade': 'VOSviewer_EMFT.json',
+  'International Journal of Islamic and Middle Eastern Finance and Management': 'VOSviewer_IJIMEFM.json',
+  'Journal of Islamic Accounting and Business Research': 'VOSviewer_JIABR.json',
+  'ISRA International Journal of Islamic Finance': 'VOSviewer_IIJIF.json',
+  'Journal of King Abdulaziz University, Islamic Economics': 'VOSviewer_JKAU.json'
+};
+
+function buildStats(){
+  const totalKeywords = DATA.reduce((s,j)=>s+j.keywords.length,0);[cite: 1]
+  const publishers = new Set(DATA.map(j=>j.publisher)).size;[cite: 1]
+  const stats = [
+    {num: DATA.length, lbl:'Journals indexed'},[cite: 1]
+    {num: totalKeywords.toLocaleString(), lbl:'Keyword records'},[cite: 1]
+    {num: 3, lbl:'Quartile bands'},[cite: 1]
+    {num: publishers, lbl:'Publishers'},[cite: 1]
+  ];
+  els.statStrip.innerHTML = stats.map(s=>`<div class="stat"><div class="num">${s.num}</div><div class="lbl">${s.lbl}</div></div>`).join('');[cite: 1]
+  els.dataMeta.textContent = `${totalKeywords.toLocaleString()} keyword records across ${DATA.length} journals`;[cite: 1]
+}
+
+function escapeHtml(str){
+  return str.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));[cite: 1]
+}
+
+function highlight(text, q){
+  if(!q) return escapeHtml(text);[cite: 1]
+  const idx = text.toLowerCase().indexOf(q.toLowerCase());[cite: 1]
+  if(idx === -1) return escapeHtml(text);[cite: 1]
+  return escapeHtml(text.slice(0,idx)) + '<mark style="background:var(--gold-300);color:var(--navy-950);border-radius:2px;padding:0 1px;">' + escapeHtml(text.slice(idx,idx+q.length)) + '</mark>' + escapeHtml(text.slice(idx+q.length));[cite: 1]
+}
+
+function search(){
+  const q = els.search.value.trim().toLowerCase();[cite: 1]
+  els.clear.style.display = q ? 'block' : 'none';[cite: 1]
+
+  let matches = DATA.filter(j => activeQuartile === 'ALL' || j.quartile === activeQuartile);[cite: 1]
+
+  if(q){
+    matches = matches.map(j=>{
+      const hits = j.keywords.filter(k => k.toLowerCase().includes(q));[cite: 1]
+      const nameHit = j.name.toLowerCase().includes(q);[cite: 1]
+      return {journal:j, hits, nameHit, score: hits.length + (nameHit?1000:0)};[cite: 1]
+    }).filter(m => m.hits.length > 0 || m.nameHit);[cite: 1]
+    matches.sort((a,b)=> b.score - a.score || a.journal.quartile.localeCompare(b.journal.quartile));[cite: 1]
+  } else {
+    matches = matches.map(j=>({journal:j, hits:[], nameHit:false, score:0}));[cite: 1]
+    const order = {Q1:0,Q2:1,Q3:2,Q4:3};[cite: 1]
+    matches.sort((a,b)=> order[a.journal.quartile]-order[b.journal.quartile] || a.journal.name.localeCompare(b.journal.name));[cite: 1]
+  }
+
+  render(matches, q);[cite: 1]
+}
+
+const COVER_IMAGES = {
+  'Borsa Istanbul Review': 'assets/borsa.jpg',[cite: 1]
+  'International Journal of Islamic and Middle Eastern Finance and Management': 'assets/ijimefm.jpeg',[cite: 1]
+  'Journal of Islamic Accounting and Business Research': 'assets/jiabr.jpeg',[cite: 1]
+  'Journal of King Abdulaziz University, Islamic Economics': 'assets/jkau.jpg',[cite: 1]
+  'Emerging Markets Finance and Trade': 'assets/emft.jpg',[cite: 1]
+  'ISRA International Journal of Islamic Finance': 'assets/ijif.jpg',[cite: 1]
+};
+
+function initials(name){
+  const stop = new Set(['of','and','the','for','in','on','at','a','an']);[cite: 1]
+  const words = name.replace(/[,\/]/g,' ').split(/\s+/).filter(w => w && !stop.has(w.toLowerCase()));[cite: 1]
+  const letters = words.slice(0,3).map(w => w[0].toUpperCase()).join('');[cite: 1]
+  return letters.slice(0,3) || name.slice(0,2).toUpperCase();[cite: 1]
+}
+
+const COVER_THEME = {
+  Q1:{base:'#0f5c52', deep:'#0a3f38'},[cite: 1]
+  Q2:{base:'#a9791f', deep:'#7a5714'},[cite: 1]
+  Q3:{base:'#8a3b2b', deep:'#5f2a1f'},[cite: 1]
+  Q4:{base:'#5c5346', deep:'#3d372e'},[cite: 1]
+};
+
+function coverSVG(j){
+  const theme = COVER_THEME[j.quartile] || COVER_THEME.Q4;[cite: 1]
+  const short = escapeHtml(initials(j.name));[cite: 1]
+  const uid = 'g' + Math.random().toString(36).slice(2,9);[cite: 1]
+  return `<svg viewBox="0 0 64 88" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escapeHtml(j.name)} cover">
+    <defs>
+      <linearGradient id="${uid}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="${theme.base}"/>
+        <stop offset="100%" stop-color="${theme.deep}"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="64" height="88" fill="url(#${uid})"/>
+    <rect x="0" y="0" width="4" height="88" fill="rgba(0,0,0,0.25)"/>
+    <rect x="6" y="8" width="26" height="2" fill="rgba(255,255,255,0.55)"/>
+    <text x="32" y="52" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="20" fill="#ffffff">${short}</text>
+    <rect x="6" y="70" width="52" height="1" fill="rgba(255,255,255,0.3)"/>
+    <text x="32" y="80" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" letter-spacing="1" fill="rgba(255,255,255,0.75)">${j.quartile}</text>
+  </svg>`;
+}
+
+function coverHtml(j){
+  const src = COVER_IMAGES[j.name];[cite: 1]
+  if(src){[cite: 1]
+    const fallback = coverSVG(j).replace(/\s+/g,' ').replace(/"/g,'&quot;').replace(/'/g,'&#39;');[cite: 1]
+    return `<img src="${src}" alt="${escapeHtml(j.name)} cover" loading="lazy" onerror="this.outerHTML='${fallback}';">`;[cite: 1]
+  }
+  return coverSVG(j);[cite: 1]
+}
+
+function openVosPopup(journalName) {
+  const targetFile = VOSVIEWER_FILES[journalName];
+  if (!targetFile) return;
+
+  const jsonPath = `assets/${targetFile}`;
+  const absoluteJsonUrl = `${window.location.origin}/${jsonPath}`;
+  const vosviewerUrl = `https://app.vosviewer.com/?json=${encodeURIComponent(absoluteJsonUrl)}`;
+  
+  els.modalTitle.textContent = `${journalName} — VOSviewer Keyword Map`;
+  els.modalFrame.src = vosviewerUrl;
+  els.modal.classList.add('active');
+}
+
+function closeVosPopup() {
+  els.modal.classList.remove('active');
+  els.modalFrame.src = "";
+}
+
+function render(matches, q){
+  els.count.textContent = matches.length ? `${matches.length} journal${matches.length!==1?'s':''} matched` : '';[cite: 1]
+
+  if(matches.length === 0){[cite: 1]
+    els.results.innerHTML = `<div class="empty-state"><div class="serif">No journals match that search</div>Try a broader keyword, or widen the quartile filter above.</div>`;[cite: 1]
+    return;[cite: 1]
+  }
+
+  els.results.innerHTML = matches.map((m,i)=>{
+    const j = m.journal;[cite: 1]
+    const shownHits = m.hits.slice(0,6);[cite: 1]
+    const extra = m.hits.length - shownHits.length;[cite: 1]
+    const chipHtml = q[cite: 1]
+      ? (shownHits.map(k=>`<span class="chip hit">${highlight(k,q)}</span>`).join('') + (extra>0?`<span class="chip more">+${extra} more</span>`:''))[cite: 1]
+      : j.keywords.slice(0,6).map(k=>`<span class="chip">${escapeHtml(k)}</span>`).join('') + (j.keywords.length>6?`<span class="chip more">+${j.keywords.length-6} more</span>`:'');[cite: 1]
+
+    const safeJournalName = j.name.replace(/'/g, "\\'");
+    const hasNetworkMap = VOSVIEWER_FILES[j.name] !== undefined;
+
+    return `
+    <div class="card">
+      <div class="cover">${coverHtml(j)}</div>[cite: 1]
+      <div class="rank">${String(i+1).padStart(2,'0')}</div>[cite: 1]
+      <div>
+        <h3 class="card-name">${highlight(j.name, q)}</h3>[cite: 1]
+        <div class="card-meta">
+          <span><b>Publisher</b>&nbsp; ${escapeHtml(j.publisher)}</span>[cite: 1]
+          <span><b>Index</b>&nbsp; ${escapeHtml(j.index_status)}</span>[cite: 1]
+          ${q ? `<span><b>${m.hits.length}</b> matching keyword${m.hits.length!==1?'s':''}</span>` : ''}[cite: 1]
+        </div>
+        <div class="chip-row">${chipHtml}</div>[cite: 1]
+        <div class="card-links" style="margin-top:12px;display:flex;gap:16px;flex-wrap:wrap">
+          <a href="${j.homepage}" target="_blank" rel="noopener">Official Journal Homepage</a>[cite: 1]
+          <a href="${j.scopus_page}" target="_blank" rel="noopener">Scopus Source Page</a>[cite: 1]
+          ${hasNetworkMap ? `
+          <a href="#" class="vosviewer-btn" onclick="openVosPopup('${safeJournalName}'); return false;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:middle;margin-top:-2px;"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            VOSviewer Network Map
+          </a>` : ''}
+        </div>
+      </div>
+      <div class="quartile-badge ${j.quartile}">${j.quartile}<span class="badge-sub">Quartile</span></div>[cite: 1]
+    </div>`;
+  }).join('');[cite: 1]
+}
+
+els.quartileGroup.addEventListener('click', e=>{[cite: 1]
+  const btn = e.target.closest('.qbtn');[cite: 1]
+  if(!btn) return;[cite: 1]
+  activeQuartile = btn.dataset.q;[cite: 1]
+  els.quartileGroup.querySelectorAll('.qbtn').forEach(b => b.classList.toggle('active', b === btn));[cite: 1]
+  search();[cite: 1]
+});
+
+els.search.addEventListener('input', search);[cite: 1]
+els.clear.addEventListener('click', ()=>{ els.search.value=''; search(); els.search.focus(); });[cite: 1]
+
+els.modalClose.addEventListener('click', closeVosPopup);
+els.modal.addEventListener('click', (e) => {
+  if(e.target === els.modal) closeVosPopup();
+});
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape') closeVosPopup();
+});
+
+buildStats();[cite: 1]
+search();[cite: 1]
+</script>
+</body>
+</html>
