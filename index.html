@@ -209,12 +209,19 @@
     padding:24px 26px;
     margin-bottom:16px;
     display:grid;
-    grid-template-columns:56px 1fr auto;
+    grid-template-columns:64px 56px 1fr auto;
     gap:22px;
     align-items:start;
     transition:border-color .15s ease, box-shadow .15s ease;
   }
   .card:hover{border-color:var(--navy-700);box-shadow:0 12px 30px -18px rgba(10,20,40,0.35);}
+
+  .cover{
+    width:64px;height:88px;border-radius:4px;overflow:hidden;flex:none;
+    box-shadow:0 6px 16px -6px rgba(10,20,40,0.4), inset 2px 0 0 rgba(0,0,0,0.15);
+  }
+  .cover svg{display:block;width:100%;height:100%;}
+  .cover img{display:block;width:100%;height:100%;object-fit:cover;}
 
   .rank{
     font-family:'Fraunces',serif;font-weight:600;font-size:26px;color:var(--gold-500);
@@ -269,6 +276,7 @@
 
   @media (max-width:640px){
     .card{grid-template-columns:1fr;}
+    .cover{display:none;}
     .quartile-badge{justify-self:start;}
     .stat-strip{grid-template-columns:repeat(2,1fr);}
     .console-row{flex-direction:column;}
@@ -394,6 +402,58 @@ function search(){
   render(matches, q);
 }
 
+const COVER_IMAGES = {
+  'Borsa Istanbul Review': 'assets/borsa.jpg',
+  'International Journal of Islamic and Middle Eastern Finance and Management': 'assets/ijimefm.jpeg',
+  'Journal of Islamic Accounting and Business Research': 'assets/jiabr.jpeg',
+  'Journal of King Abdulaziz University, Islamic Economics': 'assets/jkau.jpg',
+  'Emerging Markets Finance and Trade': 'assets/emft.jpg',
+  'ISRA International Journal of Islamic Finance': 'assets/ijif.jpg',
+};
+
+function initials(name){
+  const stop = new Set(['of','and','the','for','in','on','at','a','an']);
+  const words = name.replace(/[,\/]/g,' ').split(/\s+/).filter(w => w && !stop.has(w.toLowerCase()));
+  const letters = words.slice(0,3).map(w => w[0].toUpperCase()).join('');
+  return letters.slice(0,3) || name.slice(0,2).toUpperCase();
+}
+
+const COVER_THEME = {
+  Q1:{base:'#0f5c52', deep:'#0a3f38'},
+  Q2:{base:'#a9791f', deep:'#7a5714'},
+  Q3:{base:'#8a3b2b', deep:'#5f2a1f'},
+  Q4:{base:'#5c5346', deep:'#3d372e'},
+};
+
+function coverSVG(j){
+  const theme = COVER_THEME[j.quartile] || COVER_THEME.Q4;
+  const short = escapeHtml(initials(j.name));
+  const uid = 'g' + Math.random().toString(36).slice(2,9);
+  return `<svg viewBox="0 0 64 88" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escapeHtml(j.name)} cover">
+    <defs>
+      <linearGradient id="${uid}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="${theme.base}"/>
+        <stop offset="100%" stop-color="${theme.deep}"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="64" height="88" fill="url(#${uid})"/>
+    <rect x="0" y="0" width="4" height="88" fill="rgba(0,0,0,0.25)"/>
+    <rect x="6" y="8" width="26" height="2" fill="rgba(255,255,255,0.55)"/>
+    <text x="32" y="52" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="20" fill="#ffffff">${short}</text>
+    <rect x="6" y="70" width="52" height="1" fill="rgba(255,255,255,0.3)"/>
+    <text x="32" y="80" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" letter-spacing="1" fill="rgba(255,255,255,0.75)">${j.quartile}</text>
+  </svg>`;
+}
+
+function coverHtml(j){
+  const src = COVER_IMAGES[j.name];
+  if(src){
+    const fallback = coverSVG(j).replace(/\s+/g,' ').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+    return `<img src="${src}" alt="${escapeHtml(j.name)} cover" loading="lazy" onerror="this.outerHTML='${fallback}';">`;
+  }
+  return coverSVG(j);
+}
+
 function render(matches, q){
   els.count.textContent = matches.length ? `${matches.length} journal${matches.length!==1?'s':''} matched` : '';
 
@@ -412,6 +472,7 @@ function render(matches, q){
 
     return `
     <div class="card">
+      <div class="cover">${coverHtml(j)}</div>
       <div class="rank">${String(i+1).padStart(2,'0')}</div>
       <div>
         <h3 class="card-name">${highlight(j.name, q)}</h3>
