@@ -200,7 +200,7 @@
   .stat{
     background:var(--white);padding:20px 22px;
   }
-  .stat .num{font-family:'Fraunces',serif;font-size:28px;font-weight:600;color:var(--navy-900);font-variant-numeric:tabular-nums;}
+  .stat .num{font-family:'Fraunces',serif;font-size:28px;font-weight:600;color:var(--navy-900);}
   .stat .lbl{font-size:11.5px;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-400);margin-top:4px;}
 
   /* ---------- Results ---------- */
@@ -442,67 +442,14 @@ let activeQuartile = 'ALL';
 function buildStats(){
   const totalKeywords = DATA.reduce((s,j)=>s+j.keywords.length,0);
   const publishers = new Set(DATA.map(j=>j.publisher)).size;
-  // CHANGE TARGET NUMBERS: edit the `num` value for any stat here.
-  // Each one is a plain number (not pre-formatted) — the counter animation
-  // adds the thousands-separator commas itself as it counts up.
   const stats = [
     {num: DATA.length, lbl:'Journals indexed'},
-    {num: totalKeywords, lbl:'Keyword records'},
+    {num: totalKeywords.toLocaleString(), lbl:'Keyword records'},
     {num: 3, lbl:'Quartile bands'},
     {num: publishers, lbl:'Publishers'},
   ];
-  // Numbers start at "0" in the markup; data-target holds the real value
-  // that the IntersectionObserver-driven animation counts up to.
-  els.statStrip.innerHTML = stats.map(s=>`<div class="stat"><div class="num" data-target="${s.num}">0</div><div class="lbl">${s.lbl}</div></div>`).join('');
+  els.statStrip.innerHTML = stats.map(s=>`<div class="stat"><div class="num">${s.num}</div><div class="lbl">${s.lbl}</div></div>`).join('');
   els.dataMeta.textContent = `${totalKeywords.toLocaleString()} keyword records across ${DATA.length} journals`;
-  initStatCounters();
-}
-
-/* ===================== Rolling number counter animation ===================== */
-
-// CHANGE ANIMATION SPEED: duration in milliseconds for a number to count
-// from 0 up to its target. Increase for a slower roll, decrease for snappier.
-const COUNTER_DURATION = 1400;
-
-// Animates a single .num element from 0 to its data-target value.
-function animateCounter(el){
-  const target = Number(el.dataset.target) || 0;
-  const start = performance.now();
-
-  function tick(now){
-    const progress = Math.min((now - start) / COUNTER_DURATION, 1);
-    // Ease-out so the count starts fast and settles smoothly at the end.
-    const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-    const current = Math.floor(eased * target);
-    el.textContent = current.toLocaleString();
-
-    if(progress < 1){
-      requestAnimationFrame(tick);
-    } else {
-      el.textContent = target.toLocaleString(); // snap to the exact final value
-    }
-  }
-  requestAnimationFrame(tick);
-}
-
-let statsObserver = null;
-
-// Watches each stat number and starts its count-up the moment it scrolls
-// into view. Safe to call again after buildStats() re-renders the strip
-// (e.g. if you ever refresh DATA), since it disconnects the old observer first.
-function initStatCounters(){
-  if(statsObserver) statsObserver.disconnect();
-
-  statsObserver = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        animateCounter(entry.target);
-        statsObserver.unobserve(entry.target); // only animate once per number
-      }
-    });
-  }, {threshold: 0.4}); // fires once 40% of the number is visible
-
-  els.statStrip.querySelectorAll('.num').forEach(n => statsObserver.observe(n));
 }
 
 function escapeHtml(str){
