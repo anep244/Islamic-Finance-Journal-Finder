@@ -12,7 +12,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Finance Journal Finder — INCEIF University</title>
+<title>Islamic Finance Article Finder — INCEIF University</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
@@ -152,9 +152,6 @@
     display:none;
   }
 
-  .quartile-group{
-    display:flex;gap:8px;align-items:center;flex:none;
-  }
   .qbtn{
     border:1.5px solid var(--line);
     background:var(--white);
@@ -169,11 +166,7 @@
     letter-spacing:0.03em;
   }
   .qbtn:hover{border-color:var(--navy-800);}
-  .qbtn.active[data-q="Q1"]{background:var(--q1);border-color:var(--q1);color:#fff;}
-  .qbtn.active[data-q="Q2"]{background:var(--q2);border-color:var(--q2);color:#fff;}
-  .qbtn.active[data-q="Q3"]{background:var(--q3);border-color:var(--q3);color:#fff;}
-  .qbtn.active[data-q="Q4"]{background:var(--q4);border-color:var(--q4);color:#fff;}
-  .qbtn.active[data-q="ALL"]{background:var(--navy-900);border-color:var(--navy-900);color:#fff;}
+  .qbtn.active{background:var(--navy-900);border-color:var(--navy-900);color:#fff;}
 
   .filter-row{
     display:flex;align-items:center;gap:14px;flex-wrap:wrap;
@@ -218,19 +211,12 @@
     padding:24px 26px;
     margin-bottom:16px;
     display:grid;
-    grid-template-columns:64px 56px 1fr auto;
-    gap:22px;
+    grid-template-columns:44px 1fr;
+    gap:18px;
     align-items:start;
     transition:border-color .15s ease, box-shadow .15s ease;
   }
   .card:hover{border-color:var(--navy-700);box-shadow:0 12px 30px -18px rgba(10,20,40,0.35);}
-
-  .cover{
-    width:64px;height:88px;border-radius:4px;overflow:hidden;flex:none;
-    box-shadow:0 6px 16px -6px rgba(10,20,40,0.4), inset 2px 0 0 rgba(0,0,0,0.15);
-  }
-  .cover svg{display:block;width:100%;height:100%;}
-  .cover img{display:block;width:100%;height:100%;object-fit:cover;}
 
   .rank{
     font-family:'Fraunces',serif;font-weight:600;font-size:26px;color:var(--gold-500);
@@ -244,31 +230,6 @@
     display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12.5px;color:var(--ink-600);margin-bottom:12px;
   }
   .card-meta span b{color:var(--ink-900);font-weight:600;}
-
-  .chip-row{display:flex;flex-wrap:wrap;gap:6px;}
-  .chip{
-    font-size:11.5px;padding:4px 10px;border-radius:999px;
-    background:var(--cream-100);color:var(--navy-800);border:1px solid var(--line);
-    font-family:'IBM Plex Mono',monospace;
-  }
-  .chip.hit{background:var(--teal-600);color:#fff;border-color:var(--teal-600);}
-  .chip.more{background:transparent;color:var(--ink-400);border-style:dashed;}
-
-  .quartile-badge{
-    align-self:start;
-    font-family:'IBM Plex Mono',monospace;
-    font-size:13px;font-weight:600;
-    padding:7px 16px;border-radius:8px;color:#fff;
-    text-align:center;min-width:56px;
-  }
-  .quartile-badge.Q1{background:var(--q1);}
-  .quartile-badge.Q2{background:var(--q2);}
-  .quartile-badge.Q3{background:var(--q3);}
-  .quartile-badge.Q4{background:var(--q4);}
-  .badge-sub{
-    display:block;font-size:9.5px;letter-spacing:0.1em;color:var(--ink-400);
-    margin-top:6px;font-family:'Inter',sans-serif;text-transform:uppercase;text-align:center;
-  }
 
   .empty-state{
     text-align:center;padding:70px 20px;color:var(--ink-400);
@@ -284,49 +245,6 @@
     padding:2px 0;
   }
   .card-links a:hover{color:var(--navy-950);border-color:var(--navy-800);}
-  .net-btn{
-    font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;
-    color:var(--teal-600);background:rgba(15,92,82,0.08);border:1px solid rgba(15,92,82,0.3);
-    border-radius:999px;padding:5px 13px 5px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;
-    transition:background .15s ease;
-  }
-  .net-btn:hover{background:rgba(15,92,82,0.16);}
-  .net-btn svg{width:12px;height:12px;flex:none;}
-
-  /* ---------- Network modal (embeds VOSviewer Online) ---------- */
-  .net-overlay{
-    position:fixed;inset:0;background:rgba(10,20,40,0.6);backdrop-filter:blur(2px);
-    display:flex;align-items:center;justify-content:center;z-index:1000;padding:24px;
-  }
-  .net-overlay.hidden{display:none;}
-  .net-modal{
-    background:var(--cream-50);border-radius:14px;width:min(1200px,100%);height:min(800px,92vh);
-    display:flex;flex-direction:column;overflow:hidden;box-shadow:0 40px 80px -20px rgba(0,0,0,0.5);
-  }
-  .net-head{
-    background:var(--navy-950);color:var(--cream-50);padding:16px 22px;
-    display:flex;align-items:center;justify-content:space-between;gap:16px;flex:none;
-  }
-  .net-head h4{margin:0;font-size:16px;font-family:'Fraunces',serif;font-weight:600;}
-  .net-head .net-sub{font-size:11.5px;color:var(--gold-300);font-family:'IBM Plex Mono',monospace;margin-top:2px;}
-  .net-close{
-    background:none;border:1px solid rgba(255,255,255,0.3);color:var(--cream-50);border-radius:8px;
-    width:32px;height:32px;cursor:pointer;font-size:16px;line-height:1;flex:none;
-  }
-  .net-close:hover{background:rgba(255,255,255,0.12);}
-  .net-body{
-    flex:1;position:relative;background:var(--white);
-  }
-  .net-body iframe{
-    position:absolute;inset:0;width:100%;height:100%;border:none;
-  }
-  .net-status{
-    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-    color:var(--ink-400);font-size:13px;font-family:'IBM Plex Mono',monospace;text-align:center;
-    padding:20px;background:var(--white);
-  }
-  .net-status.hidden{display:none;}
-  .net-status a{color:var(--navy-800);}
 
   footer{
     background:var(--navy-950);color:#96a7b8;text-align:center;padding:36px 6vw 30px;font-size:12.5px;
@@ -342,11 +260,10 @@
 
   @media (max-width:640px){
     .card{grid-template-columns:1fr;}
-    .cover{display:none;}
-    .quartile-badge{justify-self:start;}
+    .rank{display:none;}
     .stat-strip{grid-template-columns:repeat(2,1fr);}
     .console-row{flex-direction:column;}
-    .quartile-group{width:100%;justify-content:stretch;}
+    .filter-row{width:100%;}
     .qbtn{flex:1;}
   }
 </style>
@@ -359,13 +276,13 @@
     <div class="brand">
       <img src="assets/kmc-logo-white.png" alt="INCEIF University Knowledge Management Centre" class="brand-logo">
     </div>
-    <div class="topbar-tag">Islamic Finance &amp; Economics Journals Index</div>
+    <div class="topbar-tag">Islamic Finance &amp; Economics Article Index</div>
   </div>
 
   <div class="hero">
-    <div class="eyebrow">Where to publish next</div>
-    <h1 class="hero-title">Match your research to the <em>right</em> journal — by keyword and quartile.</h1>
-    <p class="hero-sub">Search across indexed Islamic finance, banking and economics journals. Type a keyword from your paper's abstract, filter by Scopus/WoS quartile, and see ranked matches instantly.</p>
+    <div class="eyebrow">Find the research</div>
+    <h1 class="hero-title">Search Islamic finance <em>articles</em> — by title and abstract.</h1>
+    <p class="hero-sub">Search across indexed Islamic finance, banking and economics articles. Type a keyword from a paper's title or abstract, filter by source, and see matching articles instantly.</p>
 
     <div class="console">
       <div class="console-row">
@@ -375,16 +292,12 @@
           <button class="clear-btn" id="clearBtn">Clear</button>
         </div>
       </div>
-      <div class="filter-row" id="quartileGroup">
-        <span class="filter-label">Filter by quartile</span>
-        <button class="qbtn active" data-q="ALL">All</button>
-        <button class="qbtn" data-q="Q1">Q1</button>
-        <button class="qbtn" data-q="Q2">Q2</button>
-        <button class="qbtn" data-q="Q3">Q3</button>
-        <button class="qbtn" data-q="Q4">Q4</button>
+      <div class="filter-row" id="sourceGroup">
+        <span class="filter-label">Filter by source</span>
+        <button class="qbtn active" data-src="ALL">All</button>
       </div>
       <div class="console-meta">
-        <span>Indexed on <b>keyword co-occurrence</b> across each journal's published corpus</span>
+        <span>Searches article <b>titles</b> and <b>abstracts</b></span>
         <span id="dataMeta">loading index…</span>
       </div>
     </div>
@@ -395,7 +308,7 @@
 
 <main>
   <div class="results-head">
-    <h2 class="serif">Ranked matches</h2>
+    <h2 class="serif">Matching articles</h2>
     <div class="results-count" id="resultsCount"></div>
   </div>
   <div id="results"></div>
@@ -403,29 +316,13 @@
 
 <footer>
   <img src="assets/kmc-logo-white.png" alt="INCEIF University Knowledge Management Centre" class="footer-logo">
-  <p>Built for <b>INCEIF University</b> authors & researchers · Data reflects indexed keyword records per journal, not live citation metrics · Verify current quartile/index status before submission.</p>
+  <p>Built for <b>INCEIF University</b> authors & researchers · Data reflects indexed article records · Verify current details on the publisher's site before citing.</p>
   <p class="footer-credit">Developed by : Hanif & Claude AI</p>
 </footer>
 
-<div class="net-overlay hidden" id="netOverlay">
-  <div class="net-modal">
-    <div class="net-head">
-      <div>
-        <h4 id="netTitle">Keyword network</h4>
-        <div class="net-sub">Powered by VOSviewer Online</div>
-      </div>
-      <button class="net-close" id="netClose" aria-label="Close">&times;</button>
-    </div>
-    <div class="net-body">
-      <div class="net-status" id="netStatus">Loading network…</div>
-      <iframe id="netFrame" allowfullscreen="true" title="VOSviewer keyword network"></iframe>
-    </div>
-  </div>
-</div>
-
-<script src="data.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script>
-const DATA = window.__JOURNAL_DATA__;
+let DATA = [];
 
 const els = {
   search: document.getElementById('searchInput'),
@@ -434,27 +331,71 @@ const els = {
   count: document.getElementById('resultsCount'),
   statStrip: document.getElementById('statStrip'),
   dataMeta: document.getElementById('dataMeta'),
-  quartileGroup: document.getElementById('quartileGroup'),
+  sourceGroup: document.getElementById('sourceGroup'),
 };
 
-let activeQuartile = 'ALL';
+let activeSource = 'ALL';
+
+/* ===================== Load & parse IF_data.csv ===================== */
+
+function loadData(){
+  els.dataMeta.textContent = 'loading index…';
+  Papa.parse('IF_data.csv', {
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    complete: function(results){
+      DATA = results.data
+        .filter(row => (row.Title || '').trim())
+        .map(row => ({
+          authors: (row.Authors || '').trim(),
+          title: (row.Title || '').trim(),
+          year: (row.Year || '').trim(),
+          source: (row.Source || '').trim(),
+          articleURL: (row.ArticleURL || '').trim(),
+          abstract: (row.Abstract || '').trim(),
+        }));
+      buildSourceFilter();
+      buildStats();
+      search();
+    },
+    error: function(err){
+      els.dataMeta.textContent = 'failed to load IF_data.csv';
+      els.results.innerHTML = `<div class="empty-state"><div class="serif">Couldn't load IF_data.csv</div>Make sure IF_data.csv sits alongside index.html and that this page is served over http(s) rather than opened directly as a local file.</div>`;
+      console.error(err);
+    }
+  });
+}
+
+function buildSourceFilter(){
+  const sources = Array.from(new Set(DATA.map(a => a.source).filter(Boolean))).sort();
+  const buttons = ['<span class="filter-label">Filter by source</span>',
+    `<button class="qbtn active" data-src="ALL">All</button>`,
+    ...sources.map(s => `<button class="qbtn" data-src="${escapeHtml(s)}">${escapeHtml(s)}</button>`)
+  ];
+  els.sourceGroup.innerHTML = buttons.join('');
+}
 
 function buildStats(){
-  const totalKeywords = DATA.reduce((s,j)=>s+j.keywords.length,0);
-  const publishers = new Set(DATA.map(j=>j.publisher)).size;
+  const sources = new Set(DATA.map(a => a.source)).size;
+  const authorSet = new Set();
+  DATA.forEach(a => a.authors.split(',').forEach(name => { const n = name.trim(); if(n) authorSet.add(n.toLowerCase()); }));
+  const years = DATA.map(a => Number(a.year)).filter(y => !isNaN(y) && y > 0);
+  const yearsCovered = new Set(years).size;
+
   // CHANGE TARGET NUMBERS: edit the `num` value for any stat here.
   // Each one is a plain number (not pre-formatted) — the counter animation
   // adds the thousands-separator commas itself as it counts up.
   const stats = [
-    {num: DATA.length, lbl:'Journals indexed'},
-    {num: totalKeywords, lbl:'Keyword records'},
-    {num: 3, lbl:'Quartile bands'},
-    {num: publishers, lbl:'Publishers'},
+    {num: DATA.length, lbl:'Articles indexed'},
+    {num: sources, lbl:'Sources'},
+    {num: authorSet.size, lbl:'Unique authors'},
+    {num: yearsCovered, lbl:'Years covered'},
   ];
   // Numbers start at "0" in the markup; data-target holds the real value
   // that the IntersectionObserver-driven animation counts up to.
   els.statStrip.innerHTML = stats.map(s=>`<div class="stat"><div class="num" data-target="${s.num}">0</div><div class="lbl">${s.lbl}</div></div>`).join('');
-  els.dataMeta.textContent = `${totalKeywords.toLocaleString()} keyword records across ${DATA.length} journals`;
+  els.dataMeta.textContent = `${DATA.length.toLocaleString()} articles across ${sources} source${sources!==1?'s':''}`;
   initStatCounters();
 }
 
@@ -520,195 +461,86 @@ function search(){
   const q = els.search.value.trim().toLowerCase();
   els.clear.style.display = q ? 'block' : 'none';
 
-  let matches = DATA.filter(j => activeQuartile === 'ALL' || j.quartile === activeQuartile);
+  let matches = DATA.filter(a => activeSource === 'ALL' || a.source === activeSource);
 
   if(q){
-    matches = matches.map(j=>{
-      const hits = j.keywords.filter(k => k.toLowerCase().includes(q));
-      const nameHit = j.name.toLowerCase().includes(q);
-      return {journal:j, hits, nameHit, score: hits.length + (nameHit?1000:0)};
-    }).filter(m => m.hits.length > 0 || m.nameHit);
-    matches.sort((a,b)=> b.score - a.score || a.journal.quartile.localeCompare(b.journal.quartile));
+    matches = matches.map(a=>{
+      const titleHit = a.title.toLowerCase().includes(q);
+      const abstractHit = a.abstract.toLowerCase().includes(q);
+      return {article:a, titleHit, abstractHit, score: (titleHit?2:0) + (abstractHit?1:0)};
+    }).filter(m => m.titleHit || m.abstractHit);
+    matches.sort((a,b)=> b.score - a.score || (Number(b.article.year)||0) - (Number(a.article.year)||0));
   } else {
-    matches = matches.map(j=>({journal:j, hits:[], nameHit:false, score:0}));
-    const order = {Q1:0,Q2:1,Q3:2,Q4:3};
-    matches.sort((a,b)=> order[a.journal.quartile]-order[b.journal.quartile] || a.journal.name.localeCompare(b.journal.name));
+    matches = matches.map(a=>({article:a, titleHit:false, abstractHit:false, score:0}));
+    matches.sort((a,b)=> (Number(b.article.year)||0) - (Number(a.article.year)||0) || a.article.title.localeCompare(b.article.title));
   }
 
   render(matches, q);
 }
 
-const COVER_IMAGES = {
-  'Borsa Istanbul Review': 'assets/borsa.jpg',
-  'International Journal of Islamic and Middle Eastern Finance and Management': 'assets/ijimefm.jpeg',
-  'Journal of Islamic Accounting and Business Research': 'assets/jiabr.jpeg',
-  'Journal of King Abdulaziz University, Islamic Economics': 'assets/jkau.jpg',
-  'Emerging Markets Finance and Trade': 'assets/emft.jpg',
-  'ISRA International Journal of Islamic Finance': 'assets/ijif.jpg',
-  'Asian Economic Policy Review': 'assets/aepr.jpg',
-};
-
-const NETWORK_FILES = {
-  'Borsa Istanbul Review': 'assets/VOSviewer_BIR.json',
-  'Emerging Markets Finance and Trade': 'assets/VOSviewer_EMFT.json',
-  'International Journal of Islamic and Middle Eastern Finance and Management': 'assets/VOSviewer_IJIMEFM.json',
-  'Journal of Islamic Accounting and Business Research': 'assets/VOSviewer_JIABR.json',
-  'ISRA International Journal of Islamic Finance': 'assets/VOSviewer_IIJIF.json',
-  'Journal of King Abdulaziz University, Islamic Economics': 'assets/VOSviewer_JKAU.json',
-  'Asian Economic Policy Review': 'assets/VOSviewer_AEPR.json',
-};
-
-function initials(name){
-  const stop = new Set(['of','and','the','for','in','on','at','a','an']);
-  const words = name.replace(/[,\/]/g,' ').split(/\s+/).filter(w => w && !stop.has(w.toLowerCase()));
-  const letters = words.slice(0,3).map(w => w[0].toUpperCase()).join('');
-  return letters.slice(0,3) || name.slice(0,2).toUpperCase();
-}
-
-const COVER_THEME = {
-  Q1:{base:'#0f5c52', deep:'#0a3f38'},
-  Q2:{base:'#a9791f', deep:'#7a5714'},
-  Q3:{base:'#8a3b2b', deep:'#5f2a1f'},
-  Q4:{base:'#5c5346', deep:'#3d372e'},
-};
-
-function coverSVG(j){
-  const theme = COVER_THEME[j.quartile] || COVER_THEME.Q4;
-  const short = escapeHtml(initials(j.name));
-  const uid = 'g' + Math.random().toString(36).slice(2,9);
-  return `<svg viewBox="0 0 64 88" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escapeHtml(j.name)} cover">
-    <defs>
-      <linearGradient id="${uid}" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="${theme.base}"/>
-        <stop offset="100%" stop-color="${theme.deep}"/>
-      </linearGradient>
-    </defs>
-    <rect x="0" y="0" width="64" height="88" fill="url(#${uid})"/>
-    <rect x="0" y="0" width="4" height="88" fill="rgba(0,0,0,0.25)"/>
-    <rect x="6" y="8" width="26" height="2" fill="rgba(255,255,255,0.55)"/>
-    <text x="32" y="52" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="20" fill="#ffffff">${short}</text>
-    <rect x="6" y="70" width="52" height="1" fill="rgba(255,255,255,0.3)"/>
-    <text x="32" y="80" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" letter-spacing="1" fill="rgba(255,255,255,0.75)">${j.quartile}</text>
-  </svg>`;
-}
-
-function coverHtml(j){
-  const src = COVER_IMAGES[j.name];
-  if(src){
-    const fallback = coverSVG(j).replace(/\s+/g,' ').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
-    return `<img src="${src}" alt="${escapeHtml(j.name)} cover" loading="lazy" onerror="this.outerHTML='${fallback}';">`;
+function snippet(text, q, radius){
+  radius = radius || 140;
+  if(!text) return '';
+  if(!q){
+    return escapeHtml(text.length > radius*2 ? text.slice(0, radius*2).trim() + '…' : text);
   }
-  return coverSVG(j);
+  const idx = text.toLowerCase().indexOf(q.toLowerCase());
+  if(idx === -1){
+    return escapeHtml(text.length > radius*2 ? text.slice(0, radius*2).trim() + '…' : text);
+  }
+  const start = Math.max(0, idx - radius);
+  const end = Math.min(text.length, idx + q.length + radius);
+  const prefix = start > 0 ? '…' : '';
+  const suffix = end < text.length ? '…' : '';
+  return prefix + highlight(text.slice(start, end), q) + suffix;
 }
 
 function render(matches, q){
-  els.count.textContent = matches.length ? `${matches.length} journal${matches.length!==1?'s':''} matched` : '';
+  els.count.textContent = matches.length ? `${matches.length} article${matches.length!==1?'s':''} matched` : '';
 
   if(matches.length === 0){
-    els.results.innerHTML = `<div class="empty-state"><div class="serif">No journals match that search</div>Try a broader keyword, or widen the quartile filter above.</div>`;
+    els.results.innerHTML = `<div class="empty-state"><div class="serif">No articles match that search</div>Try a broader keyword, or widen the source filter above.</div>`;
     return;
   }
 
   els.results.innerHTML = matches.map((m,i)=>{
-    const j = m.journal;
-    const shownHits = m.hits.slice(0,6);
-    const extra = m.hits.length - shownHits.length;
-    const chipHtml = q
-      ? (shownHits.map(k=>`<span class="chip hit">${highlight(k,q)}</span>`).join('') + (extra>0?`<span class="chip more">+${extra} more</span>`:''))
-      : j.keywords.slice(0,6).map(k=>`<span class="chip">${escapeHtml(k)}</span>`).join('') + (j.keywords.length>6?`<span class="chip more">+${j.keywords.length-6} more</span>`:'');
+    const a = m.article;
+    const hasLink = a.articleURL && /^https?:\/\//i.test(a.articleURL);
+    const titleHtml = highlight(a.title, q);
 
     return `
     <div class="card">
-      <div class="cover">${coverHtml(j)}</div>
       <div class="rank">${String(i+1).padStart(2,'0')}</div>
       <div>
-        <h3 class="card-name">${highlight(j.name, q)}</h3>
+        <h3 class="card-name">${hasLink
+          ? `<a href="${a.articleURL}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">${titleHtml}</a>`
+          : titleHtml}</h3>
         <div class="card-meta">
-          <span><b>Publisher</b>&nbsp; ${escapeHtml(j.publisher)}</span>
-          <span><b>Index</b>&nbsp; ${escapeHtml(j.index_status)}</span>
-          ${q ? `<span><b>${m.hits.length}</b> matching keyword${m.hits.length!==1?'s':''}</span>` : ''}
+          <span><b>Authors</b>&nbsp; ${escapeHtml(a.authors) || '—'}</span>
+          <span><b>Year</b>&nbsp; ${escapeHtml(a.year) || '—'}</span>
+          <span><b>Source</b>&nbsp; ${escapeHtml(a.source) || '—'}</span>
         </div>
-        <div class="chip-row">${chipHtml}</div>
+        ${a.abstract ? `<p style="font-size:13.5px;line-height:1.6;color:var(--ink-600);margin:0 0 12px;">${snippet(a.abstract, q)}</p>` : ''}
         <div class="card-links">
-          <a href="${j.homepage}" target="_blank" rel="noopener">Official Journal Homepage</a>
-          <a href="${j.scopus_page}" target="_blank" rel="noopener">Scopus Source Page</a>
-          ${NETWORK_FILES[j.name] ? `<button class="net-btn" data-journal="${escapeHtml(j.name)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="18" r="2.4"/><line x1="7.7" y1="7.2" x2="10.7" y2="16.3"/><line x1="16.3" y1="8.2" x2="13.3" y2="16.3"/><line x1="8.2" y1="6.3" x2="15.8" y2="6.8"/></svg> Keyword Network</button>` : ''}
+          ${hasLink ? `<a href="${a.articleURL}" target="_blank" rel="noopener">Read Article</a>` : ''}
         </div>
       </div>
-      <div class="quartile-badge ${j.quartile}">${j.quartile}<span class="badge-sub">Quartile</span></div>
     </div>`;
   }).join('');
 }
 
-els.quartileGroup.addEventListener('click', e=>{
+els.sourceGroup.addEventListener('click', e=>{
   const btn = e.target.closest('.qbtn');
   if(!btn) return;
-  activeQuartile = btn.dataset.q;
-  els.quartileGroup.querySelectorAll('.qbtn').forEach(b => b.classList.toggle('active', b === btn));
+  activeSource = btn.dataset.src;
+  els.sourceGroup.querySelectorAll('.qbtn').forEach(b => b.classList.toggle('active', b === btn));
   search();
 });
 
 els.search.addEventListener('input', search);
 els.clear.addEventListener('click', ()=>{ els.search.value=''; search(); els.search.focus(); });
 
-els.results.addEventListener('click', e=>{
-  const btn = e.target.closest('.net-btn');
-  if(!btn) return;
-  openNetworkModal(btn.dataset.journal);
-});
-
-buildStats();
-search();
-
-/* ===================== Keyword Network modal (VOSviewer Online embed) ===================== */
-
-const netEls = {
-  overlay: document.getElementById('netOverlay'),
-  title: document.getElementById('netTitle'),
-  close: document.getElementById('netClose'),
-  status: document.getElementById('netStatus'),
-  frame: document.getElementById('netFrame'),
-};
-
-function openNetworkModal(journalName){
-  const file = NETWORK_FILES[journalName];
-  if(!file) return;
-
-  netEls.title.textContent = journalName;
-  netEls.overlay.classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-
-  // VOSviewer Online runs on app.vosviewer.com and fetches the JSON itself,
-  // so it needs a full, publicly reachable URL rather than a relative path.
-  const absoluteUrl = new URL(file, window.location.href).href;
-
-  if(window.location.protocol === 'file:'){
-    netEls.frame.removeAttribute('src');
-    netEls.status.classList.remove('hidden');
-    netEls.status.innerHTML = 'VOSviewer Online needs this site to be served over the web (not opened directly as a local file) so it can fetch <code>' + file + '</code>. Host this folder (e.g. GitHub Pages) and open it from there to view the network.';
-    return;
-  }
-
-  netEls.status.classList.remove('hidden');
-  netEls.status.textContent = 'Loading VOSviewer Online…';
-
-  const vosUrl = 'https://app.vosviewer.com/?json=' + encodeURIComponent(absoluteUrl) + '&simple_ui=true';
-  netEls.frame.src = vosUrl;
-}
-
-netEls.frame.addEventListener('load', ()=>{
-  netEls.status.classList.add('hidden');
-});
-
-function closeNetworkModal(){
-  netEls.overlay.classList.add('hidden');
-  document.body.style.overflow = '';
-  netEls.frame.src = 'about:blank';
-}
-
-netEls.close.addEventListener('click', closeNetworkModal);
-netEls.overlay.addEventListener('click', e=>{ if(e.target === netEls.overlay) closeNetworkModal(); });
-document.addEventListener('keydown', e=>{ if(e.key === 'Escape' && !netEls.overlay.classList.contains('hidden')) closeNetworkModal(); });
+loadData();
 </script>
 </body>
 </html>
