@@ -461,19 +461,20 @@ function search(){
   const q = els.search.value.trim().toLowerCase();
   els.clear.style.display = q ? 'block' : 'none';
 
+  if(!q){
+    els.count.textContent = '';
+    els.results.innerHTML = `<div class="empty-state"><div class="serif">Start typing to search</div>Results will appear here as you search article titles and abstracts.</div>`;
+    return;
+  }
+
   let matches = DATA.filter(a => activeSource === 'ALL' || a.source === activeSource);
 
-  if(q){
-    matches = matches.map(a=>{
-      const titleHit = a.title.toLowerCase().includes(q);
-      const abstractHit = a.abstract.toLowerCase().includes(q);
-      return {article:a, titleHit, abstractHit, score: (titleHit?2:0) + (abstractHit?1:0)};
-    }).filter(m => m.titleHit || m.abstractHit);
-    matches.sort((a,b)=> b.score - a.score || (Number(b.article.year)||0) - (Number(a.article.year)||0));
-  } else {
-    matches = matches.map(a=>({article:a, titleHit:false, abstractHit:false, score:0}));
-    matches.sort((a,b)=> (Number(b.article.year)||0) - (Number(a.article.year)||0) || a.article.title.localeCompare(b.article.title));
-  }
+  matches = matches.map(a=>{
+    const titleHit = a.title.toLowerCase().includes(q);
+    const abstractHit = a.abstract.toLowerCase().includes(q);
+    return {article:a, titleHit, abstractHit, score: (titleHit?2:0) + (abstractHit?1:0)};
+  }).filter(m => m.titleHit || m.abstractHit);
+  matches.sort((a,b)=> b.score - a.score || (Number(b.article.year)||0) - (Number(a.article.year)||0));
 
   render(matches, q);
 }
