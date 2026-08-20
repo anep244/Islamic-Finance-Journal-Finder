@@ -624,7 +624,7 @@ function buildFilters(){
   allChip.innerHTML = `All journals <span class="n">${ALL.length}</span>`;
   container.appendChild(allChip);
 
-  const visibleCount = Math.ceil(JOURNALS.length / 2);
+  const visibleCount = 3;
   JOURNALS.forEach((j, i) => {
     const chip = document.createElement('div');
     chip.className = 'chip' + (i >= visibleCount ? ' chip-extra' : '');

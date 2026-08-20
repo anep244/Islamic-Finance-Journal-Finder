@@ -103,6 +103,49 @@
     font-variant-numeric: tabular-nums;
   }
   .hits-tag #hitsCount{ color:#e3c684; font-weight:600; }
+
+  /* ---------- World clock strip ---------- */
+  .world-clock{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0;
+    max-width:1120px;
+    margin:22px auto 0 auto;
+    padding:0 28px;
+    border-top:1px solid rgba(244,239,225,0.18);
+    border-bottom:1px solid rgba(244,239,225,0.18);
+  }
+  .clock-cell{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    padding:10px 18px 10px 0;
+    margin-right:18px;
+    border-right:1px solid rgba(244,239,225,0.18);
+  }
+  .clock-cell:last-child{ border-right:none; margin-right:0; }
+  .clock-city{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:#a49b7e;
+  }
+  .clock-time{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13.5px;
+    font-weight:600;
+    color:#e6e0cc;
+    font-variant-numeric: tabular-nums;
+  }
+  .clock-day{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10px;
+    color:#7f7862;
+  }
+  @media (max-width:640px){
+    .clock-cell{ padding:8px 12px 8px 0; margin-right:12px; }
+  }
   .hero-body{
     flex:1;
     display:flex;
@@ -239,6 +282,15 @@
     color:#1b2a34;
   }
   .chip .n{ opacity:0.65; margin-left:4px;}
+  .chip-extra{ display:none; }
+  .filters.expanded .chip-extra{ display:inline-flex; }
+  .chip-toggle{
+    background:transparent;
+    border-style:dashed;
+    color:#e3c684;
+    font-weight:600;
+  }
+  .chip-toggle:hover{ border-color:#e3c684; color:#fff; }
 
   /* ---------- Results section (below hero, on paper) ---------- */
   .results-section{
@@ -400,6 +452,8 @@
     </div>
   </div>
 
+  <div class="world-clock" id="worldClock"></div>
+
   <div class="hero-body">
     <h1 class="hero-title">The <em>Index</em></h1>
     <p class="hero-sub">A combined research catalogue of articles from fourteen journals of Islamic finance, banking, economics and management — searchable by title, abstract or journal.</p>
@@ -421,7 +475,7 @@
 
     <div class="search-block">
       <div class="search-row">
-        <span class="glyph">§</span>
+        <span class="glyph"></span>
         <input id="search" type="text" placeholder="Search by title, abstract or journal…" autocomplete="off">
         <button id="searchBtn">Search</button>
       </div>
@@ -463,6 +517,35 @@ const resultsEl = $('#results');
 const loadmoreBtn = $('#loadmore');
 
 document.getElementById('todayDate').textContent = new Date().toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' });
+
+/* ---------- World clock (major Islamic finance / trading hubs) ---------- */
+const CLOCK_CITIES = [
+  { label: 'Kuala Lumpur', tz: 'Asia/Kuala_Lumpur' },
+  { label: 'Dubai',        tz: 'Asia/Dubai' },
+  { label: 'Jakarta',      tz: 'Asia/Jakarta' },
+  { label: 'London',       tz: 'Europe/London' },
+  { label: 'New York',     tz: 'America/New_York' },
+  { label: 'Riyadh',       tz: 'Asia/Riyadh' },
+];
+
+function renderClocks(){
+  const now = new Date();
+  document.getElementById('worldClock').innerHTML = CLOCK_CITIES.map(c => {
+    const time = new Intl.DateTimeFormat('en-GB', {
+      timeZone: c.tz, hour: '2-digit', minute: '2-digit', hour12: false
+    }).format(now);
+    const day = new Intl.DateTimeFormat('en-GB', {
+      timeZone: c.tz, weekday: 'short'
+    }).format(now);
+    return `<div class="clock-cell">
+      <span class="clock-city">${c.label}</span>
+      <span class="clock-time">${time}</span>
+      <span class="clock-day">${day}</span>
+    </div>`;
+  }).join('');
+}
+renderClocks();
+setInterval(renderClocks, 30000);
 
 /* ---------- Hits counter ----------
    Uses the free CountAPI service so the count is shared across every
@@ -540,20 +623,38 @@ function buildFilters(){
   allChip.dataset.journal = 'ALL';
   allChip.innerHTML = `All journals <span class="n">${ALL.length}</span>`;
   container.appendChild(allChip);
-  JOURNALS.forEach(j => {
+
+  const visibleCount = Math.ceil(JOURNALS.length / 2);
+  JOURNALS.forEach((j, i) => {
     const chip = document.createElement('div');
-    chip.className = 'chip';
+    chip.className = 'chip' + (i >= visibleCount ? ' chip-extra' : '');
     chip.dataset.journal = j;
     chip.innerHTML = `${j} <span class="n">${counts[j]}</span>`;
     container.appendChild(chip);
   });
+
+  const remaining = JOURNALS.length - visibleCount;
+  if(remaining > 0){
+    const toggle = document.createElement('div');
+    toggle.className = 'chip chip-toggle';
+    toggle.id = 'filterToggle';
+    toggle.textContent = `Expand +${remaining} more`;
+    container.appendChild(toggle);
+  }
+
   container.addEventListener('click', e => {
+    const toggle = e.target.closest('.chip-toggle');
+    if(toggle){
+      const expanded = container.classList.toggle('expanded');
+      toggle.textContent = expanded ? 'Collapse' : `Expand +${remaining} more`;
+      return;
+    }
     const chip = e.target.closest('.chip');
     if(!chip) return;
     state.journal = chip.dataset.journal;
     state.shown = PAGE_SIZE;
     state.hasSearched = true;
-    [...container.children].forEach(c => c.classList.toggle('active', c===chip));
+    [...container.children].forEach(c => { if(!c.classList.contains('chip-toggle')) c.classList.toggle('active', c===chip); });
     render();
     if(state.hasSearched){
       document.querySelector('.results-section').scrollIntoView({behavior:'smooth', block:'start'});
