@@ -41,8 +41,23 @@ This is an expanding database — more journals can be merged in as new exports 
 - `index.html` — the site itself (structure, styling, and search logic)
 - `articles.json` — the combined article dataset the page reads from
 - `combined_articles.csv` — the same combined dataset in spreadsheet form, with full original bibliographic fields (citations, DOI, ISSN, volume/issue, page numbers, etc.) for offline analysis or re-import
+- `robots.txt` — tells search engines they may crawl the site
+- `sitemap.xml` — lists the homepage plus one deep link per journal, for search engines to discover
 
-Both `index.html` and `articles.json` must stay in the same folder — the page fetches the JSON at load time.
+Both `index.html` and `articles.json` must stay in the same folder — the page fetches the JSON at load time. All five files should be deployed together.
+
+## Live site
+
+Hosted at: **https://anep244.github.io/the-index/**
+
+## Search engine visibility
+
+The site is set up to be indexable by Google and other search engines:
+
+- `<meta name="description">`, canonical URL, and Open Graph/Twitter tags are set in `index.html`'s `<head>`, using the live URL above.
+- Deep links (`?q=keyword` and `?journal=Journal+Name`) pre-fill the search box and show results automatically on load — this is what lets a search engine (or a shared link) land directly on a filtered result set, since the results normally only appear after clicking Search.
+- `robots.txt` and `sitemap.xml` are included at the site root and must be deployed alongside `index.html`.
+- After deploying, submit the site in [Google Search Console](https://search.google.com/search-console): verify the domain, submit `sitemap.xml`, and use "Request Indexing" on the homepage to speed up the first crawl.
 
 ## Updating the catalogue
 

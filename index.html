@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZXS79YTNZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TZXS79YTNZ');
-</script>
-Use Google Tag Manager
-For additional features including multiple tag management and enterprise workflows, install and manage with Google Tag Manager.Learn more about Google Tag Manager
-If you have end users in the European Economic Area (EEA), set up consent mode so that you can continue to benefit from ads personalisation and measurement.
-Use of the Google tag is subject to the terms governing the service where it is used.
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Index — Islamic Finance &amp; Economics Research Catalogue</title>
+<meta name="description" content="Search 4,293+ articles across 14 Islamic finance and economics journals by title, abstract, author or journal — a combined research catalogue built for INCEIF researchers, academics and students.">
+<link rel="canonical" href="https://anep244.github.io/the-index/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Index">
+<meta property="og:title" content="The Index — Islamic Finance & Economics Research Catalogue">
+<meta property="og:description" content="Search 4,293+ articles across 14 Islamic finance and economics journals by title, abstract, author or journal.">
+<meta property="og:url" content="https://anep244.github.io/the-index/">
+<meta property="og:image" content="https://inceif.edu.my/wp-content/uploads/2025/06/Cover-photo-Jalan-Tun-Ismail.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Index — Islamic Finance & Economics Research Catalogue">
+<meta name="twitter:description" content="Search 4,293+ articles across 14 Islamic finance and economics journals by title, abstract, author or journal.">
+<meta name="twitter:image" content="https://inceif.edu.my/wp-content/uploads/2025/06/Cover-photo-Jalan-Tun-Ismail.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "The Index — Islamic Finance & Economics Research Catalogue",
+  "url": "https://anep244.github.io/the-index/",
+  "description": "A combined, searchable catalogue of articles from 14 Islamic finance and economics journals.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://anep244.github.io/the-index/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -670,6 +685,7 @@ function buildFilters(){
     state.hasSearched = true;
     [...container.children].forEach(c => { if(!c.classList.contains('chip-toggle')) c.classList.toggle('active', c===chip); });
     render();
+    updateUrl();
     if(state.hasSearched){
       document.querySelector('.results-section').scrollIntoView({behavior:'smooth', block:'start'});
     }
@@ -750,11 +766,21 @@ function render(){
   loadmoreBtn.hidden = state.shown >= filtered.length;
 }
 
+function updateUrl(){
+  const params = new URLSearchParams();
+  if(state.q.trim()) params.set('q', state.q.trim());
+  if(state.journal !== 'ALL') params.set('journal', state.journal);
+  const qs = params.toString();
+  const newUrl = window.location.pathname + (qs ? '?' + qs : '');
+  history.replaceState(null, '', newUrl);
+}
+
 function runSearch(){
   state.q = document.getElementById('search').value;
   state.shown = PAGE_SIZE;
   state.hasSearched = true;
   render();
+  updateUrl();
   document.querySelector('.results-section').scrollIntoView({behavior:'smooth', block:'start'});
 }
 
@@ -786,6 +812,31 @@ fetch('articles.json')
     animateCount(document.getElementById('statYears'), (maxY-minY+1), {dur:1200});
 
     buildFilters();
+
+    // Deep-link support: ?q=keyword and/or ?journal=Journal+Name
+    const params = new URLSearchParams(window.location.search);
+    const urlQ = params.get('q');
+    const urlJournal = params.get('journal');
+    if(urlQ || urlJournal){
+      if(urlQ){
+        document.getElementById('search').value = urlQ;
+        state.q = urlQ;
+      }
+      if(urlJournal && JOURNALS.includes(urlJournal)){
+        state.journal = urlJournal;
+        document.querySelectorAll('#journalFilters .chip').forEach(c => {
+          if(!c.classList.contains('chip-toggle')){
+            c.classList.toggle('active', c.dataset.journal === urlJournal);
+          }
+        });
+        if(JOURNALS.indexOf(urlJournal) >= 3){
+          document.getElementById('journalFilters').classList.add('expanded');
+          const toggle = document.getElementById('filterToggle');
+          if(toggle) toggle.textContent = 'Collapse';
+        }
+      }
+      state.hasSearched = true;
+    }
     render();
   })
   .catch(err => {
