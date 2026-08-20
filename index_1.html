@@ -85,11 +85,6 @@
     filter: brightness(0) invert(1);
     opacity:0.95;
   }
-  .hero-tag-group{
-    display:flex;
-    align-items:center;
-    gap:16px;
-  }
   .hero-tag{
     font-family:'JetBrains Mono', monospace;
     font-size:11px;
@@ -97,12 +92,6 @@
     text-transform:uppercase;
     color:#d8d0b8;
   }
-  .hits-tag{
-    padding-left:16px;
-    border-left:1px solid rgba(244,239,225,0.28);
-    font-variant-numeric: tabular-nums;
-  }
-  .hits-tag #hitsCount{ color:#e3c684; font-weight:600; }
   .hero-body{
     flex:1;
     display:flex;
@@ -394,10 +383,7 @@
     <div class="hero-logo">
       <img src="https://inceif.edu.my/wp-content/uploads/2024/07/INCEIF-AACSB-black-2.png" alt="INCEIF University">
     </div>
-    <div class="hero-tag-group">
-      <span class="hero-tag" id="todayDate"></span>
-      <span class="hero-tag hits-tag">Visits: <span id="hitsCount">—</span></span>
-    </div>
+    <div class="hero-tag" id="todayDate"></div>
   </div>
 
   <div class="hero-body">
@@ -448,7 +434,6 @@
 
   <footer>
     Compiled from exported bibliographic records (Google Scholar / Scopus metadata) across 14 Islamic finance &amp; economics journals. Built as a static catalogue — no server, no database.
-    <span id="footerHits"></span>
   </footer>
 </div>
 
@@ -463,34 +448,6 @@ const resultsEl = $('#results');
 const loadmoreBtn = $('#loadmore');
 
 document.getElementById('todayDate').textContent = new Date().toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' });
-
-/* ---------- Hits counter ----------
-   Uses the free CountAPI service so the count is shared across every
-   visitor to this page (a static site has no server of its own to store
-   it). NAMESPACE/KEY should stay unique to this deployment — change
-   HITS_NAMESPACE below if you fork this page, otherwise your count will
-   mix with anyone else using the same default. Falls back to a
-   browser-local counter (this device only) if the service is unreachable.
-*/
-const HITS_NAMESPACE = 'inceif-research-index-4293-v1';
-const HITS_KEY = 'visits';
-
-function showHits(n, isLocal){
-  const label = n.toLocaleString('en-US') + (isLocal ? ' (this device)' : '');
-  document.getElementById('hitsCount').textContent = label;
-  document.getElementById('footerHits').textContent = ' · ' + n.toLocaleString('en-US') + (isLocal ? ' visits recorded on this device' : ' total visits');
-}
-
-function localFallbackHit(){
-  const v = parseInt(localStorage.getItem('hits_fallback') || '0', 10) + 1;
-  localStorage.setItem('hits_fallback', v);
-  showHits(v, true);
-}
-
-fetch(`https://api.countapi.xyz/hit/${HITS_NAMESPACE}/${HITS_KEY}`)
-  .then(r => { if(!r.ok) throw new Error('bad response'); return r.json(); })
-  .then(d => showHits(d.value, false))
-  .catch(localFallbackHit);
 
 function animateCount(el, to, opts={}){
   const dur = opts.dur || 1400;
